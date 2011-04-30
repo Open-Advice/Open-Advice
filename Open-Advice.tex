@@ -1,0 +1,64 @@
+\documentclass[a5paper,10pt]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos, textsize=tiny]{todonotes}
+%\includexmp{metadata}
+\usepackage[english]{babel}
+\usepackage[raiselinks=true,
+bookmarks=true,
+bookmarksopenlevel=1,
+bookmarksopen=true,
+bookmarksnumbered=true,
+hyperindex=true,
+plainpages=false,
+pdfpagelabels=true,
+pdfborder={0 0 0.5}
+]{hyperref}
+\hypersetup{
+  pdfauthor={Lydia Pintscher},
+  pdftitle={Open Advice},
+  pdfsubject={Open Source, Free Software},
+  pdfkeywords={Open Source, Free Software},
+  pdflang=en,
+  colorlinks,
+  linkcolor=black,
+  anchorcolor=black,
+  filecolor=black,
+  urlcolor=black,
+  citecolor=black,
+  bookmarksnumbered=true,
+  pdfpagelayout=TwoColumnRight
+}
+
+\title{Open Advice}
+\author{Lydia Pintscher}
+\date{\today}
+
+\begin{document}
+\chapterstyle{veelo}
+\frontmatter
+\maketitle
+\newpage
+\tableofcontents*
+\listoftodos
+\mainmatter
+\input{foreword}
+\input{usability}
+\input{mentoringrecruiting}
+\input{qualityassurance}
+\input{packaging}
+\input{translation}
+\input{documentationsupport}
+\input{ideasinnovation}
+\input{research}
+\input{infrastructure}
+\input{communitymanagement}
+\input{business}
+\input{promotion}
+\input{code}
+\input{artworkdesign}
+\input{hardware}
+\input{conferencessprints}
+\input{legalpolicy}
+\backmatter
+\end{document}
