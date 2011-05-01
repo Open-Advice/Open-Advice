@@ -1,5 +1,5 @@
 *.aux
-*.kileproject
+*.kilepr
 *~
 *.log
 *.pdf
