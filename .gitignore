@@ -1,0 +1,9 @@
+*.aux
+*.kileproject
+*~
+*.log
+*.pdf
+*.tdo
+*.toc
+*.out
+
