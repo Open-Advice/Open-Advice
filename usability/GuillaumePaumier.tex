@@ -1,22 +1,22 @@
 \section{Learn from your users - Guillaume Paumier}
 \todo{bio}
-You know Wikipedia, the freely reusable encyclopedia that anyone can edit. It was created in 2001 and recently celebrated its tenth anniversary. Despite being one of the ten most visited websites in the world, its user interface still looks very "1.0", compared to what interactive web technologies allow. Some might say it's for the best: Wikipedia is "serious stuff", and the user shouldn't be distracted by fireworks in the interface. Yet, Wikipedia has had issues recruiting new participants in the last few years, in part because of its interface, that some may call archaic.
+You know Wikipedia, the freely reusable encyclopedia that anyone can edit. It was created in 2001 and recently celebrated its tenth anniversary. Despite being one of the ten most visited websites in the world, its user interface still looks very ``1.0'', compared to what interactive web technologies allow. Some might say it's for the best: Wikipedia is ``serious stuff'', and the user shouldn't be distracted by fireworks in the interface. Yet, Wikipedia has had issues recruiting new participants in the last few years, in part because of its interface, that some may call archaic.
 
-This might explain why surveys of Wikipedia participants have repeatedly shown a bias towards young, technology-savvy men, many with a background in computers and engineering. Besides the fact that free knowledge and free licenses sprouted from the fertile land of free and open-source software, the complicated interface has discouraged many motivated potential participants.
+This might explain why surveys of Wikipedia participants have repeatedly shown a bias towards young, technology-savvy men, many with a background in computers and engineering. Besides the fact that free knowledge and free licenses sprouted from the fertile land of Free and Open Source Software, the complicated interface has discouraged many motivated potential participants.
 
-In 2011, when all the major online publishing and collaboration platforms (like WordPress, Etherpad and Google Documents) offer a visual editor to some extent, Wikipedia is still using a many-year-old default wikitext editor that uses quotes ('''') and brackets ([[]]) for formatting. Efforts are underway to transition to a default visual editor in 2012, but it isn't an easy challenge to solve.
+In 2011, when all the major online publishing and collaboration platforms (like WordPress, Etherpad and Google Documents) offer a visual editor to some extent, Wikipedia is still using a many-year-old default wikitext editor that uses quotes ('''')\todo{fix} and brackets ([[]]) for formatting. Efforts are underway to transition to a default visual editor in 2012, but it isn't an easy challenge to solve.
 
 But let's put the editor aside for a moment. The interface of Wikipedia remains fairly complicated, and many useful features are difficult to discover. Did you know Wikipedia had an integrated version control system, and you could see all the previous versions of a page? Did you know you could see the list of all the edits made by a participant? Did you know you could link to a specific version of a page? Did you know you could export a page to PDF, or create custom hardcover books from Wikipedia content, to be sent to your home?
 
 Most Wikipedia readers arrive through search engines. Statistics show they spend little time on Wikipedia, once they find the information they were looking for. Few stick around and explore what tools the interface offers. For example, Wikipedia is routinely criticized about its quality and reliability. Many of these unexplored, almost hidden tools could prove useful to readers to help them assess the reliability of information.
 
-Wikipedia and its sister projects are powered by a wiki engine called "MediaWiki" (and supported by the "Wikimedia" Foundation; all these confusing names alone are a usability sin). For a long time, the development of MediaWiki was primarily led by software developers. The MediaWiki community has a strong developer base; actually, this community is almost entirely composed of developers. Only recently did designers join the community, and they were hired by the Wikimedia Foundation in this capacity. There are hardly any volunteer designers in the community.
+Wikipedia and its sister projects are powered by a wiki engine called MediaWiki (and supported by the Wikimedia Foundation; all these confusing names alone are a usability sin). For a long time, the development of MediaWiki was primarily led by software developers. The MediaWiki community has a strong developer base; actually, this community is almost entirely composed of developers. Only recently did designers join the community, and they were hired by the Wikimedia Foundation in this capacity. There are hardly any volunteer designers in the community.
 
 This has caused the application to be built and "designed" exclusively by developers. As a consequence, the interface has naturally taken a shape that closely follows the "implementation model", i.e. the way the software is implemented in the code and data structures. Only rarely does this implementation model match the "user model", i.e. the way the user imagines things to work.
 
-It would be unfair to say that developers don't care about users. The whole point of creating software (apart from the sheer pleasure of learning stuff, writing code and solving problems) is to release it so it can be used. This is particularly true in the world of free and open-source software, where most developers selflessly volunteer their time and expertise.
+It would be unfair to say that developers do not care about users. The whole point of creating software (apart from the sheer pleasure of learning stuff, writing code and solving problems) is to release it so it can be used. This is particularly true in the world of Free and Open Source Software, where most developers selflessly volunteer their time and expertise.
 
-One might argue that many developers are, in fact, users of their own product, especially in the world of free and open-source software. After all, they created it, or joined its team, for a reason, and this reason was rarely money. As a consequence, developers of open-source software would be in an ideal position to know what the user wants.
+One might argue that many developers are, in fact, users of their own product, especially in the world of Free and Open Source software. After all, they created it, or joined its team, for a reason, and this reason was rarely money. As a consequence, developers of this kind of software would be in an ideal position to know what the user wants.
 
 But let's face it: you are not your regular user.
 
@@ -26,42 +26,38 @@ Let's say you are creating an application that stores data in tabular form (poss
 
 Another challenge is the level of expertise of developers. Because you want your application to be awesome, you're likely to do a lot of research to build it. In the end, you may not only become an expert in your application, but also an expert in your application's topic. Many of your users won't have (or need) that level of expertise, and they may be lost with the level of detail of some features, or be unfamiliar with some terms the layperson doesn't know.
 
-So, what can you do to fix it?
+So, what can you do to fix it? Watch users. Seriously. Watching people as they use your application is truly an eye-opening experience.
 
-Watch users.
+Now, one way to watch people use your application is to hire a usability firm, who will recruit testers with various profiles among a pool of thousands, prepare an interview script, rent a room in a usability lab with a screen-recording app, a video camera pointed at the tester, and you in a backroom behind a one-way glass, head-desking and swearing every time the user does something you think does not make any sense.
 
-Seriously. Watching people as they use your application is truly an eye-opening experience.
+If you can afford to do that, then by all means, do so. What you will learn will really change your perspective. If you can not afford professional testing, all is not lost; you are just going to have to do it yourself.
 
-Now, one way to watch people use your application is to hire a usability firm, who will recruit testers with various profiles among a pool of thousands, prepare an interview script, rent a room in a usability lab with a screen-recording app, a video camera pointed at the tester, and you in a backroom behind a one-way glass, head-desking and swearing every time the user does something you think doesn't make any sense.
+Just sit beside a user as they show you how they perform their tasks and go through their workflow. Be a silent observer: your goal is to observe, and note everything. Many things will surprise you. Once the user is done, you can go through your notes and ask questions to help you understand how they think. Look at the resources at the end of this article to know more about do-it-yourself testing.\todo{fix - footnote?}
 
-If you can afford to do that, then by all means, do so. What you'll learn will really change your perspective. If you can't afford "professional" testing, all is not lost; you're just going to have to do it yourself.
+It can be a bit awkward for users to be watched, yet I bet many of them will happily volunteer to help you improve your application. Users who can not contribute code are usually happy to find other ways to participate, and showing you how they use the software is a very easy way to do so. Users are generally grateful for the time you have spent developing the application, and they want to give back.
 
-Just sit beside a user as they show you how they perform their tasks and go through their workflow. Be a silent observer: your goal is to observe, and note everything. Many things will surprise you. Once the user is done, you can go through your notes and ask questions to help you understand how they think. Look at the resources at the end of this article to know more about do-it-yourself testing.
+You will need to keep in mind, though, that not everything your users request can or should be done. Listen carefully to their stories: it is an opportunity for you to identify issues. But because a user requests a feature does not mean they really need that feature; maybe the best way to fix the issue underlying their feature request is to implement a completely different feature. Do not listen blindly to your users. But you probably knew that already. 
 
-It can be a bit awkward for users to be watched, yet I bet many of them will happily volunteer to help you improve your application. Users who can't contribute code are usually happy to find other ways to participate, and showing you how they use the software is a very easy way to do so. Users are generally grateful for the time you've spent developing the application, and they want to give back.
+Oh, and by the way, do not ask your mom, either.
 
-You'll need to keep in mind, though, that not everything your users request can or should be done. Listen carefully to their stories: it's an opportunity for you to identify issues. But because a user requests a feature doesn't mean they really need that feature; maybe the best way to fix the issue underlying their feature request is to implement a completely different feature. Don't listen blindly to your users. But you probably knew that already. 
-
-Oh, and by the way, don't ask your mom, either.
-
-No offense intended, I'm sure your mom is a very nice person. But if you're creating an accounting application, and she has never done any accounting, she's going to be quite lost. You'll spend more time explaining what double-entry bookkeeping is, than really testing your software. However, you mom, who bought herself a digital camera last year, can be an ideal tester if you're creating an application to manage digital photos, or to upload them to a popular online sharing platform. For your accounting application, you can ask one of your colleagues or friends who already knows a thing or two about accounting.
+No offense intended, I am sure your mom is a very nice person. But if you are creating an accounting application, and she has never done any accounting, she is going to be quite lost. You will spend more time explaining what double-entry bookkeeping is, than really testing your software. However, your mom, who bought herself a digital camera last year, can be an ideal tester if you are creating an application to manage digital photos, or to upload them to a popular online sharing platform. For your accounting application, you can ask one of your colleagues or friends who already knows a thing or two about accounting.
 
 Ask different people, too.
 
-For some cosmological reason, people will find endless ways to use and abuse your application, and break it in ways you wouldn't think of in your worst nightmares. Some will implement processes and workflows with your application that make absolutely no sense to you, and you will want to slam your head on your desk. Others will use your application in ways so smart, they'll make you feel stupid. Try to listen to users with different profiles, who have different goals when they use your application.
+For some cosmological reason, people will find endless ways to use and abuse your application, and break it in ways you would not think of in your worst nightmares. Some will implement processes and workflows with your application that make absolutely no sense to you, and you will want to slam your head on your desk. Others will use your application in ways so smart, they will make you feel stupid. Try to listen to users with different profiles, who have different goals when they use your application.
 
-Users are an unpredictable species. But they're on your side. Learn from them.
+Users are an unpredictable species. But they are on your side. Learn from them.
 
 \textbf{If you remember nothing else, ...}
 
 ... then remember this:
 \begin{itemize}
  \item You will be tempted to make the interface look and behave like how it works in the back-end. Your users can help you prevent that.
- \item Users are an unpredictable species. They will break, abuse and optimize your application in ways you can't even imagine.
+ \item Users are an unpredictable species. They will break, abuse and optimize your application in ways you can not even imagine.
  \item Learn from your users. Improve your application based on what you learned. Profit.
 \end{itemize}
 
-\textbf{Resources}
+\subsection*{Resources}
 \begin{itemize}
  \item  Don't Make Me Think: A Common Sense Approach to Web Usability. Steve Krug. New Riders Press (2005). ISBN 978-0321344755.
  \item Rocket Surgery Made Easy: The Do-It-Yourself Guide to Finding and Fixing Usability Problems. Steve Krug. New Riders Press (2009). ISBN 978-0321657299.
