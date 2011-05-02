@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="phone-call.svg">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2836"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2866"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2894"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2945"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3027"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3084"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="246.47599"
+     inkscape:cy="971.38158"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1440"
+     inkscape:window-height="849"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2816" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2822"
+       width="210"
+       height="68.571426"
+       x="133.28516"
+       y="65.219322"
+       ry="15.714286" />
+    <text
+       xml:space="preserve"
+       style="font-size:16;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans"
+       x="200"
+       y="108.07647"
+       id="text2824"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2826"
+         x="200"
+         y="108.07647">PhoneCall</tspan></text>
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2822-1"
+       width="210"
+       height="68.571426"
+       x="133.57143"
+       y="173.07646"
+       ry="15.714286" />
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2856"
+       width="80.714287"
+       height="49.285713"
+       x="147.14287"
+       y="182.36218"
+       ry="15.714286" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans"
+       x="159.57199"
+       y="213.12613"
+       id="text2824-6"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2826-9"
+         x="159.57199"
+         y="213.12613">HalfCall</tspan></text>
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2856-5"
+       width="80.714287"
+       height="49.285713"
+       x="246.42857"
+       y="182.36218"
+       ry="15.714286" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans"
+       x="258.8577"
+       y="213.12613"
+       id="text2824-6-4"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2826-9-5"
+         x="258.8577"
+         y="213.12613">HalfCall</tspan></text>
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2822-1-7"
+       width="210"
+       height="68.571426"
+       x="133.57143"
+       y="268.79077"
+       ry="15.714286" />
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2977"
+       width="192.14285"
+       height="59.285664"
+       x="140.71428"
+       y="273.79074"
+       ry="15.714286" />
+    <path
+       style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 252.14286,273.79074 64.99999,0 c 8.70571,0 15.71428,7.00857 15.71428,15.71429 l 0,27.85709 c 0,8.70571 -7.00857,15.71428 -15.71428,15.71428 l -64.99999,0 c -8.70572,0 -20.11701,-4.98589 -20.42586,-10.99002 -0.30885,-6.00412 2.14648,-7.80401 4.64411,-9.37459 2.49762,-1.57058 4.31144,-4.24877 4.48053,-8.41089 0.16909,-4.16213 -2.60941,-7.91405 -4.7742,-8.36378 -2.70252,-0.56144 -4.41367,-3.41239 -4.35044,-8.02129 0.0632,-4.6089 7.93206,-13.87255 20.42586,-14.12509 z"
+       id="rect3001"
+       sodipodi:nodetypes="cccccczzzszc" />
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2856-8"
+       width="80.714287"
+       height="49.285713"
+       x="147.14287"
+       y="278.07648"
+       ry="15.714286" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans"
+       x="159.57199"
+       y="308.84042"
+       id="text2824-6-2"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2826-9-8"
+         x="159.57199"
+         y="308.84042">HalfCall</tspan></text>
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2856-5-2"
+       width="80.714287"
+       height="49.285713"
+       x="246.42859"
+       y="278.07648"
+       ry="15.714286" />
+    <path
+       sodipodi:nodetypes="cczcczc"
+       id="path3135"
+       d="m 190.16121,406.62219 0,-27.27412 c 0,0 11.11165,6.56599 17.17257,6.56599 6.06091,0 14.14216,-6.06092 14.14216,-6.06092 l 0,27.27413 c 0,0 -8.58632,-6.56601 -14.64724,-6.56601 -6.06091,0 -16.66749,6.06093 -16.66749,6.06093 z"
+       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 279.55971,379.85315 0,27.27412 c 0,0 -11.11165,-6.56599 -17.17257,-6.56599 -6.06091,0 -14.14216,6.06092 -14.14216,6.06092 l 0,-27.27413 c 0,0 8.58632,6.56601 14.64724,6.56601 6.06091,0 16.66749,-6.06093 16.66749,-6.06093 z"
+       id="path3137"
+       sodipodi:nodetypes="cczcczc" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3074"
+       sodipodi:cx="287.13586"
+       sodipodi:cy="301.56631"
+       sodipodi:rx="20.455587"
+       sodipodi:ry="20.455587"
+       d="m 307.59145,301.56631 a 20.455587,20.455587 0 1 1 -40.91117,0 20.455587,20.455587 0 1 1 40.91117,0 z"
+       transform="translate(-52.500809,92.274048)" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans"
+       x="258.8577"
+       y="308.84042"
+       id="text2824-6-4-3"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2826-9-5-4"
+         x="258.8577"
+         y="308.84042">HalfCall</tspan></text>
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2856-8-9"
+       width="80.714287"
+       height="49.285713"
+       x="111.52544"
+       y="368.08969"
+       ry="15.714286" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans"
+       x="123.95455"
+       y="398.85364"
+       id="text2824-6-2-1"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2826-9-8-1"
+         x="123.95455"
+         y="398.85364">HalfCall</tspan></text>
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2856-5-2-5"
+       width="80.714287"
+       height="49.285713"
+       x="276.97614"
+       y="369.09985"
+       ry="15.714286" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans"
+       x="289.40527"
+       y="399.8638"
+       id="text2824-6-4-3-7"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2826-9-5-4-9"
+         x="289.40527"
+         y="399.8638">HalfCall</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3070"
+       y="399.8638"
+       x="220.42412"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans"
+       xml:space="preserve"><tspan
+         y="399.8638"
+         x="220.42412"
+         id="tspan3072"
+         sodipodi:role="line">Call</tspan></text>
+    <path
+       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 228.29448,550.82147 27.27412,0 c 0,0 -6.56599,11.11165 -6.56599,17.17257 0,6.06091 6.06091,14.14216 6.06091,14.14216 l -27.27412,0 c 0,0 6.566,-8.58632 6.566,-14.64724 0,-6.06091 -6.06092,-16.66749 -6.06092,-16.66749 z"
+       id="rect3128"
+       sodipodi:nodetypes="cczcczc" />
+    <path
+       inkscape:transform-center-x="-21.870445"
+       inkscape:transform-center-y="-12.626901"
+       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 256.68203,548.01814 -13.63706,-23.62008 c 0,0 12.90597,0.13049 18.15488,-2.89997 5.2489,-3.03046 9.21701,-12.31999 9.21701,-12.31999 l 13.63706,23.62008 c 0,0 -10.71897,-1.39316 -15.96788,1.6373 -5.2489,3.03046 -11.40401,13.58266 -11.40401,13.58266 z"
+       id="path3133"
+       sodipodi:nodetypes="cczcczc" />
+    <path
+       sodipodi:nodetypes="cczcczc"
+       id="path3131"
+       d="m 240.0605,524.83546 -13.63706,23.62008 c 0,0 -6.33998,-11.24214 -11.58889,-14.2726 -5.2489,-3.03045 -15.27793,-1.82217 -15.27793,-1.82217 l 13.63706,-23.62008 c 0,0 4.15298,9.97948 9.40189,13.00994 5.2489,3.03045 17.46493,3.08483 17.46493,3.08483 z"
+       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:transform-center-y="-12.626906"
+       inkscape:transform-center-x="21.87044" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3074-8"
+       sodipodi:cx="287.13586"
+       sodipodi:cy="301.56631"
+       sodipodi:rx="20.455587"
+       sodipodi:ry="20.455587"
+       d="m 307.59145,301.56631 a 20.455587,20.455587 0 1 1 -40.91117,0 20.455587,20.455587 0 1 1 40.91117,0 z"
+       transform="translate(-44.924659,237.73603)" />
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2856-8-9-2"
+       width="80.714287"
+       height="49.285713"
+       x="359.40884"
+       y="321.68155"
+       ry="15.714286"
+       inkscape:transform-center-x="68.235788"
+       transform="matrix(0.8660254,0.5,-0.5,0.8660254,0,0)"
+       inkscape:transform-center-y="-39.39596" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans"
+       x="371.83795"
+       y="352.44547"
+       id="text2824-6-2-1-1"
+       sodipodi:linespacing="100%"
+       inkscape:transform-center-x="66.333386"
+       inkscape:transform-center-y="-38.016865"
+       transform="matrix(0.8660254,0.5,-0.5,0.8660254,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan2826-9-8-1-4"
+         x="371.83795"
+         y="352.44547">HalfCall</tspan></text>
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2856-5-2-5-7"
+       width="80.714287"
+       height="49.285713"
+       x="-23.038042"
+       y="563.3606"
+       ry="15.714286"
+       inkscape:transform-center-x="-66.923574"
+       transform="matrix(0.8660254,-0.5,0.5,0.8660254,0,0)"
+       inkscape:transform-center-y="-38.638311" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans"
+       x="-10.608904"
+       y="594.12451"
+       id="text2824-6-4-3-7-9"
+       sodipodi:linespacing="100%"
+       inkscape:transform-center-x="-68.972452"
+       inkscape:transform-center-y="-39.763761"
+       transform="matrix(0.8660254,-0.5,0.5,0.8660254,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan2826-9-5-4-9-9"
+         x="-10.608904"
+         y="594.12451">HalfCall</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3070-0"
+       y="545.32574"
+       x="228.00026"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans"
+       xml:space="preserve"><tspan
+         y="545.32574"
+         x="228.00026"
+         id="tspan3072-1"
+         sodipodi:role="line">Call</tspan></text>
+    <rect
+       ry="15.714286"
+       y="217.64838"
+       x="-659.36389"
+       height="49.285713"
+       width="80.714287"
+       id="rect3122"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:transform-center-y="79.802063" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text3124"
+       y="248.41229"
+       x="-646.93475"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lucida Sans"
+       xml:space="preserve"
+       inkscape:transform-center-x="3.7746094e-05"
+       inkscape:transform-center-y="77.632412"
+       transform="matrix(0,-1,1,0,0,0)"><tspan
+         y="248.41229"
+         x="-646.93475"
+         id="tspan3126"
+         sodipodi:role="line">HalfCall</tspan></text>
+  </g>
+</svg>
