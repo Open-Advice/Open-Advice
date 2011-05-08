@@ -136,25 +136,17 @@ In software terms, it turns out that this is what much of \textit{Refactoring} i
 By extracting a chunk of code and putting it in a function with a name, you are essentially adding a thick boundary around that code, and creating a strong center. By removing a global variable and adding class variables, you are allowing for roughness, as every instance can now have a different value in that variable, as needed. By having a producer/consumer, or notifier/listener, you have local symmetries, deep interlock and ambiguity, and good shape.
 
 Richard Gabriel, one of the principal figures in Common Lisp, studied how to apply Alexander's theories to software (and also to poetry, and isn't code similar to poetry after all?).  He gives the following example:
-
-1. Imagine that you write a PhoneCall class. This is a latent center, not as strong as it could be.\todo{markup}
-
-2. Gerard Meszaros, in \textit{Pattern: Half Object + Protocol} suggested that you should split that into half calls tied by a protocol.
-
-We attain a local symmetry, we make a strong center, and get levels of scale.
-
-3. Now make a diagram of that:
-
-You have local symmetry, levels of scale, boundaries, deep interlock and ambiguity - and this is where Meszaros left things.
-
-4. Richard Gabriel then suggests strengthening the centers that exist by applying other structure-preserving transformations. What about the latent center in the middle?
-
-You add an explicit boundary (Call) that ties the HalfCalls. This improves the local symmetries, retains deep interlock and ambiguity, and it is composable.
-
-5. Yes, composable.
-
-Multi-way calls, conference calls, happen all out of applying structure-preserving transformations.
-
+\begin{enumerate}
+ \item Imagine that you write a PhoneCall class. This is a latent center, not as strong as it could be.
+ \item Gerard Meszaros, in \textit{Pattern: Half Object + Protocol} suggested that you should split that into half calls tied by a protocol.
+ We attain a local symmetry, we make a strong center, and get levels of scale.
+ \item Now make a diagram of that:
+ You have local symmetry, levels of scale, boundaries, deep interlock and ambiguity - and this is where Meszaros left things.
+ \item Richard Gabriel then suggests strengthening the centers that exist by applying other structure-preserving transformations. What about the latent center in the middle?
+ You add an explicit boundary (Call) that ties the HalfCalls. This improves the local symmetries, retains deep interlock and ambiguity, and it is composable.
+ \item Yes, composable.
+ Multi-way calls, conference calls, happen all out of applying structure-preserving transformations.
+\end{enumerate}
 Probably every programmer keeps a mental picture of the program he is creating or modifying - the hard part of modifying code that you did not write is forming that mental picture in the first place. When you work to make the code present a more beautiful picture, your code becomes better - and Alexander gives us a good way to do that.
 
 \section*{The fundamental process}
