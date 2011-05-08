@@ -2,7 +2,7 @@
 \todo{bio}
 \section*{Dogfooding Is Not Enough} 
 
-I have been involved with Open Source since my early days at University, in Granada. There, with some friends, we founded the local Linux User Group [1] and organized several activities to promote Free Software. But, since I left university, and until I started working at Canonical, my professional career had been in the proprietary software industry, first as a developer and after that as a tester.
+I have been involved with Open Source since my early days at University, in Granada. There, with some friends, we founded the local Linux User Group\footnote{\url{http://www.gcubo.org}} and organized several activities to promote Free Software. But, since I left university, and until I started working at Canonical, my professional career had been in the proprietary software industry, first as a developer and after that as a tester.
 
 When working in a proprietary software project, testing resources are very limited. A small testing team continues the work that developers started with unit testing, using their expertise to find as many bugs as possible, to release the product in good shape for end user consumption. In the free software world, however, everything changes.
 
@@ -20,10 +20,10 @@ During the latest Ubuntu development cycles we have started several organized te
 
 Regarding tools that help testing, many improvements have been made:
 \begin{itemize}
- \item Apport [2] has contributed to increase the level of detail of the bugs reported against Ubuntu: crashers include all the debugging information and their duplicates are found and marked as such; people can report bugs based on symptoms, etc.
- \item Launchpad [3], with its upstream connections, has allowed having a full view of the bugs, knowing that bugs happening in Ubuntu are usually bugs in the upstream projects, and allowing developers to know if the bugs are being solved there. 
- \item Firefox, with its Test Pilot extension and program, drives the testing without having to leave the browser [4]. This is, I believe, a much better way to reach testers than a mailing list or an IRC channel.
- \item The Ubuntu QA team is testing the desktop in an automated fashion and reporting results every week, [5] allowing developers to have a very quick way to check that there have not been any major regressions during the development.
+ \item Apport\footnote{\url{http://wiki.ubuntu.com/Apport}} has contributed to increase the level of detail of the bugs reported against Ubuntu: crashers include all the debugging information and their duplicates are found and marked as such; people can report bugs based on symptoms, etc.
+ \item Launchpad\footnote{\url{http://launchpad.net}}, with its upstream connections, has allowed having a full view of the bugs, knowing that bugs happening in Ubuntu are usually bugs in the upstream projects, and allowing developers to know if the bugs are being solved there. 
+ \item Firefox, with its Test Pilot extension and program, drives the testing without having to leave the browser\footnote{\url{http://testpilot.mozillalabs.com}}. This is, I believe, a much better way to reach testers than a mailing list or an IRC channel.
+ \item The Ubuntu QA team is testing the desktop in an automated fashion and reporting results every week\footnote{\url{http://reports.qa.ubuntu.com/reports/desktop-testing/natty}}, allowing developers to have a very quick way to check that there have not been any major regressions during the development.
 \end{itemize}
 
 Although testing FLOSS projects is getting better, there is still a lot to be done.
@@ -34,7 +34,7 @@ Testing is a skilled activity that requires lots of expertise, but in the FLOSS 
 
 But, how do we improve testing? Of course, we cannot completely get rid of testcases, but we need to change the way we create and maintain them. Our testers and users are intelligent, so, why creating step-by-step scripts? Those could easily get replaced by an automated testing tool. Instead of that, let's just have a list of activities you perform with the application and some properties it should have, for example, "Shortcuts in the launcher can be rearranged" or "Starting up LibreOffice is fast". Testers will figure out how to do it, and will create their testcases as they test.
 
-But this is not enough, we need better tools to help testers know what to test, when and how.  What about having an API to allow developers to send messages to testers about updates or new features that need testing? What about an application that tell us what part of our system needs testing based on testing activity? In the case of Ubuntu we have the data in Launchpad (we would need testing data as well, but at least we have bug data). If I want to start a testing session against a particular component I would love to have the areas that haven't been tested yet and a list of the 5 bugs with more duplicates for that particular version, so I avoid filing those again. I would love to have all this information without leaving the same desktop that I am testing. This is something that Firefox has started with Test Pilot, although they are currently mainly gathering browser activity. Google is also doing some research in this area [6].
+But this is not enough, we need better tools to help testers know what to test, when and how.  What about having an API to allow developers to send messages to testers about updates or new features that need testing? What about an application that tell us what part of our system needs testing based on testing activity? In the case of Ubuntu we have the data in Launchpad (we would need testing data as well, but at least we have bug data). If I want to start a testing session against a particular component I would love to have the areas that haven't been tested yet and a list of the 5 bugs with more duplicates for that particular version, so I avoid filing those again. I would love to have all this information without leaving the same desktop that I am testing. This is something that Firefox has started with Test Pilot, although they are currently mainly gathering browser activity. Google is also doing some research in this area\footnote{\url{http://www.youtube.com/watch?v=cqwXUTjcabs}}.
 
 Communication between downstream and upstream and vice-versa also needs to get better. During the development of a distribution, many of the upstream versions are also under development, and they already have a list of known bugs. If I am a tester of Firefox through Ubuntu, I would love to have a list of known bugs as soon as the new package gets to the archive. This could be done by having an acknowledged syntax for release notes, that could then get easily parsed and bugs automatically filed and connected to the upstream bugs. Again, all of this information should be easily available to the tester, without leaving the desktop.
 
@@ -43,11 +43,3 @@ Testing, if done this way, would allow the tester to concentrate on the things t
 \section*{Wrapping up}
 
 From what I have seen in the latest three years, testing has improved a lot in Ubuntu and the rest of FLOSS projects that I am somehow involved with, but this is not enough. If we really want to increase the quality of open source software we need to start investing in testing and innovating the ways we do it, the same way we invest in development. We cannot test 21st century software, with 20th century testing techniques. We need to react. Open Source is good because is open source is not enough anymore. Open Source will be good because it is open source and has the best quality that we can offer.
-
-
-[1] http://www.gcubo.org
-[2] https://wiki.ubuntu.com/Apport
-[3] https://launchpad.net/
-[4] https://testpilot.mozillalabs.com/
-[5] http://reports.qa.ubuntu.com/reports/desktop-testing/natty/
-[6] http://www.youtube.com/watch?v=cqwXUTjcabs
