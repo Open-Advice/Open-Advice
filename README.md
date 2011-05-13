@@ -5,8 +5,11 @@ of the book here.
 
 ## Building a PDF
 
-To build a pdf file out of the LaTeX source install LaTeX and run "pdflatex
-Open-Advice".
+To build a pdf file out of the LaTeX source install pdflatex and run the command
+
+    pdflatex Open-Advice
+
+## Installing pdflatex
 
 On Debian-based systems, you can install "pdflatex" with:
 
