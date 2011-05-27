@@ -1,5 +1,21 @@
 \chapter{What I wish I would have known about testing when I started... - Jonathan "Duke" Leto}
 
+\textit{Jonathan "Duke" Leto is a software developer, published mathematician, git ninja
+and avid bicyclist living in Portland, Oregon. Duke is a core developer of
+Parrot Virtual Machine, Board member of Parrot Foundation and Community Manager.
+He helped create the PDX Hackathon user group and has been listed as one of the
+most influential coders in Portland, OR according to Github statistics.
+
+Duke kicks ass in Google Summer of Code and Google Code-In as an organization
+administrator, which involves organizing dozens of mentors who are teaching
+brilliant high school and college students about FLOSS and how to integrate
+into FLOSS communities.
+
+Duke is the founder of Leto Labs LLC and is currently a Bioinformatics
+Analyst at Boyce Thompson Insitute For Plant Research in Ithaca, New York. He
+received his Masters in Mathematics from University of Central Florida and
+enjoys discovering wheels within wheels.}
+
 When I first got involved in Free and Open Source Software, I had no clue what tests were or why they were important. I had worked on some personal programming projects before, but the first time I actually worked on a project with others, i.e., got a commit bit, was Yacas, a computer algebra system similar to Mathematica (Yet Another Computer Algebra System).
 
 At this stage in my journey, tests were an afterthought. My general meta-algorithm was to hack on code $\rightarrow$ see if it works $\rightarrow$ write a simple test to show it works (optional). If a test was challenging to write, it most likely never got written.
@@ -64,21 +80,3 @@ To make this a little more concrete, we will give a basic analogy using function
 An integration test asserts something like function composition, i.e., f(g(a)) = b\todo{make this a proper formula}. An integration test is testing how multiple things integrate or work together, instead of how a single part works individually. If algebra isn't your thing, another way to look at it is unit tests only test one part of the machine at a time, but integration tests very many parts work in unison. A great example of an integration test is test driving a car. You aren't checking the air pressure, or measuring voltage of the spark plugs. You are making sure the vehicle works as a whole.
 
 Most of the time it is good to have both. I often start with unit tests and add integration tests as needed, since you will weed out the most basic bugs first, then find more subtle bugs that are related to how pieces don't quite fit together, as opposed to the individual pieces not working. Many people write integration tests first and then delve into unit tests. Which you write first isn't nearly as important as writing both kinds.
-
-\section{Bio}
-
-Jonathan "Duke" Leto is a software developer, published mathematician, git ninja
-and avid bicyclist living in Portland, Oregon. Duke is a core developer of
-Parrot Virtual Machine, Board member of Parrot Foundation and Community Manager.
-He helped create the PDX Hackathon user group and has been listed as one of the
-most influential coders in Portland, OR according to Github statistics.
-
-Duke kicks ass in Google Summer of Code and Google Code-In as an organization
-administrator, which involves organizing dozens of mentors who are teaching
-brilliant high school and college students about FLOSS and how to integrate
-into FLOSS communities.
-
-Duke is the founder of Leto Labs LLC and is currently a Bioinformatics
-Analyst at Boyce Thompson Insitute For Plant Research in Ithaca, New York. He
-received his Masters in Mathematics from University of Central Florida and
-enjoys discovering wheels within wheels.
