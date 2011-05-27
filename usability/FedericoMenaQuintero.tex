@@ -1,6 +1,5 @@
 \chapter{Software that has the Quality Without A Name - Federico Mena Quintero}
 \todo{bio}
-\todo{add image}
 When I was learning how to program, I noticed that I frequently hit the same problem over and over again: I would often write a program that worked reasonably well, and even had a good structure, but after some time of modifying it and enhancing it, I could no longer tweak it any further. Either its complexity would overwhelm me, or it would be so tightly written that it allowed no room for expansion, like a house where you cannot build up because it has a sloping roof, and you cannot build to the sides because it has a wall all around it.
 
 As I got better, I learned to deal with complexity. We all learn how to do that with various tools and techniques: abstraction, encapsulation, object-orientation, functional techniques, etc. We learn how various techniques let us write broader programs.
@@ -138,13 +137,33 @@ By extracting a chunk of code and putting it in a function with a name, you are 
 Richard Gabriel, one of the principal figures in Common Lisp, studied how to apply Alexander's theories to software (and also to poetry, and isn't code similar to poetry after all?).  He gives the following example:
 \begin{enumerate}
  \item Imagine that you write a PhoneCall class. This is a latent center, not as strong as it could be.
+   \begin{figure}[h!]
+     \centering
+     \includegraphics[scale=0.6,keepaspectratio=true]{./usability/federico1.png}
+   \end{figure}
  \item Gerard Meszaros, in \textit{Pattern: Half Object + Protocol} suggested that you should split that into half calls tied by a protocol.
+   \begin{figure}[h!]
+     \centering
+     \includegraphics[scale=0.6,keepaspectratio=true]{./usability/federico2.png}
+   \end{figure}
  We attain a local symmetry, we make a strong center, and get levels of scale.
  \item Now make a diagram of that:
+   \begin{figure}[h!]
+     \centering
+     \includegraphics[scale=0.6,keepaspectratio=true]{./usability/federico3.png}
+   \end{figure}
  You have local symmetry, levels of scale, boundaries, deep interlock and ambiguity - and this is where Meszaros left things.
  \item Richard Gabriel then suggests strengthening the centers that exist by applying other structure-preserving transformations. What about the latent center in the middle?
+   \begin{figure}[h!]
+     \centering
+     \includegraphics[scale=0.6,keepaspectratio=true]{./usability/federico4.png}
+   \end{figure}
  You add an explicit boundary (Call) that ties the HalfCalls. This improves the local symmetries, retains deep interlock and ambiguity, and it is composable.
  \item Yes, composable.
+   \begin{figure}[h!]
+     \centering
+     \includegraphics[scale=0.6,keepaspectratio=true]{./usability/federico5.png}
+   \end{figure}
  Multi-way calls, conference calls, happen all out of applying structure-preserving transformations.
 \end{enumerate}
 Probably every programmer keeps a mental picture of the program he is creating or modifying - the hard part of modifying code that you did not write is forming that mental picture in the first place. When you work to make the code present a more beautiful picture, your code becomes better - and Alexander gives us a good way to do that.
