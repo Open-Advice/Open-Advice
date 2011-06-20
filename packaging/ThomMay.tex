@@ -1,4 +1,4 @@
-\chapter{Packaging - Providing a great route into Free Software -- Thom May}
+\chapter{Packaging - Providing a Great Route into Free Software -- Thom May}
 
 \textit{Thom May is a Debian Developer, an emeritus Member of the Apache
 Software Foundation and was one of the first hires for Canonical, Ubuntu's
@@ -62,17 +62,13 @@ software project complies with the policy of the distribution; in my case
 Debian. Generally, this means configuring the software at build time so that
 files are placed in the correct directory locations (specified by the File
 Hierarchy Standard, or FHS), that dependencies on other packages are correctly
-specified,
- and that the software runs successfully on the distribution. 
+specified, and that the software runs successfully on the distribution. 
 
 More complex packaging can require splitting an upstream project into multiple
 packages, for example libraries and the header files that allow the user to
 compile software against that library are shipped in separate packages, and
 platform dependent files can be shipped separately from platform independent
-ones. Ensuring that 
-the upstream software correctly deploys in these situations will often require
-changes to the code. These changes are the first step into active work on a
-project, rather than the sometimes passive act of packaging. 
+ones. Ensuring that the upstream software correctly deploys in these situations will often require changes to the code. These changes are the first step into active work on a project, rather than the sometimes passive act of packaging. 
 
 Once your package is available in the distribution it is exposed to millions of
 potential users. These users are guaranteed to run your software in ways that
@@ -98,10 +94,7 @@ complex art form. Debian runs on many platforms, from IBM mainframes to smart
 phones, and the range and breadth of these platform swiftly reveals assumptions
 in the code. More often than not the packager has easier access to a broader
 range of platforms than upstream does, and so is the first port of call when a
-knotty 
-porting problem does come up. One quickly learns to recognise the symptoms of
-pointer size assumptions, endianness problems, and many other esoteric issues;
-this experience makes one a more versatile and cautious programmer. 
+knotty porting problem does come up. One quickly learns to recognise the symptoms of pointer size assumptions, endianness problems, and many other esoteric issues; this experience makes one a more versatile and cautious programmer.
 
 As a package collects bug fixes and improvements, it is essential to feed those
 changes back upstream. Too often the delta between a package and the definitive,
