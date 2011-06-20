@@ -1,11 +1,8 @@
-\chapter{What I wish I would have known about testing when I started... -
+\chapter{What I Wish I Would Have Known About Testing When I Started... -
 Jonathan "Duke" Leto}
 
 \textit{Jonathan "Duke" Leto is a software developer, published mathematician,
-git ninja and avid bicyclist living in Portland, Oregon. Duke is a core developer of
-Parrot Virtual Machine, Board member of Parrot Foundation and Community Manager.
-He helped create the PDX Hackathon user group and has been listed as one of the
-most influential coders in Portland, OR according to Github statistics.
+git ninja and avid bicyclist living in Portland, Oregon. Duke is a core developer of Parrot Virtual Machine, Board member of Parrot Foundation and Community Manager. He helped create the PDX Hackathon user group and has been listed as one of the most influential coders in Portland, OR according to Github statistics.
 \newline
 Duke kicks ass in Google Summer of Code and Google Code-In as an organization
 administrator, which involves organizing dozens of mentors who are teaching
@@ -20,8 +17,7 @@ enjoys discovering wheels within wheels.}
 When I first got involved in Free and Open Source Software, I had no clue what
 tests were or why they were important. I had worked on some personal programming
 projects before, but the first time I actually worked on a project with others,
-i.e., got a commit bit, was Yacas, a computer algebra system similar to
-Mathematica (Yet Another Computer Algebra System).
+i.e., got a commit bit, was Yacas, Yet Another Computer Algebra System, a computer algebra system similar to Mathematica.
 
 At this stage in my journey, tests were an afterthought. My general
 meta-algorithm was to hack on code $\rightarrow$ see if it works $\rightarrow$
@@ -29,8 +25,8 @@ write a simple test to show it works (optional). If a test was challenging to
 write, it most likely never got written.
 
 This is the first step in the path to Test Driven Enlightenment. You know tests
-are probably a good idea, but one hasn't seen the benefit of them clearly, so
-they are only written occasionally.
+are probably a good idea, but you haven't seen the benefit of them clearly, so
+you only write tests occasionally.
 
 If I could open up a wormhole and tell my younger self one piece of wisdom about
 testing, it would be:
@@ -55,15 +51,13 @@ story, where the story is how you think code should work.
 Code either changes and evolves or bitrots\footnote{The term "bitrot" is coder
 slang for the almost universal fact that if a piece of code doesn't change but
 everything it relies on does, it ``rots'' and usually has very little chance of
-working without modifications being made to accommodate newer software and
+working unless modifications are made to accommodate newer software and
 hardware.}.
 
 Very often, you will write tests once, but then totally refactor your
 implementation or even rewrite it from scratch. Tests often outlive the code
 they originally tested, i.e., one set of tests can be used no matter how many
-times your code is refactored. They are actually the litmus test that allows you
-to throw away an old implementation and say ``this newer implementation has a
-much better design and passes our test suite.'' I have seen this happen many
+times your code is refactored. Tests are actually the litmus test that allows you to throw away an old implementation and say ``this newer implementation has a much better design and passes our test suite.'' I have seen this happen many
 times in the Perl and Parrot communities, where you can often find me.
 
 Tests allow you to change things quickly and know if something is broken. They
@@ -104,9 +98,7 @@ become.
  \item You are done! Do a happy dance :)
 \end{enumerate}
 
-This method works for any kind of test and any language. If there is only one
-thing about testing that you remember from this essay, let it be the steps
-above.
+This method works for any kind of test and any language. If you remember only one thing about testing from this essay, remember the steps above.
 
 Here are some more general test-driven guidelines that will serve you well and
 apply in almost any situation:
@@ -131,10 +123,10 @@ Many people start to get confused when people speak of ``integration tests'',
 ``unit tests'', ``acceptance tests'' and many other flavors of tests. One
 shouldn't worry too much about these terms. The more tests you write, the more
 nuances you will see and the differences between tests will become more
-apparent. Every one does not have the same definition for what these tests are,
+apparent. Everyone does not have the same definition for what these tests are,
 but the terms are still useful to describe kinds of tests.
 
-\section*{Unit Tests vs. Integration Tests}
+\section*{Unit tests vs. integration tests}
 
 Unit tests and integration tests form a spectrum. Unit tests test small bits of
 code, and integration tests verify how more than one unit fit together. The test
@@ -153,9 +145,7 @@ b\todo{make this a proper formula}. An integration test is testing how multiple
 things integrate or work together, instead of how a single part works
 individually. If algebra isn't your thing, another way to look at it is unit
 tests only test one part of the machine at a time, but integration tests very
-many parts work in unison. A great example of an integration test is test
-driving a car. You aren't checking the air pressure, or measuring voltage of the
-spark plugs. You are making sure the vehicle works as a whole.
+many parts work in unison. A great example of an integration test is test-driving a car. You aren't checking the air pressure, or measuring voltage of the spark plugs. You are making sure the vehicle works as a whole.
 
 Most of the time it is good to have both. I often start with unit tests and add
 integration tests as needed, since you will weed out the most basic bugs first,
