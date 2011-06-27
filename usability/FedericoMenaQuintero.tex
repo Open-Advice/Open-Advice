@@ -28,7 +28,7 @@ Some years ago the whole \textit{Refactoring} craze started, but I did not pay
 much attention to it. I said, sure, it is a way to clean up your code, but so
 what? I already know how to take a chunk of code and turn it into a function; I
 already know how to take similar chunks of code and turn them into derived
-classes. I already know how to write mostly-clean code. What's the big deal?
+classes. I already know how to write mostly-clean code. What is the big deal?
 
 I dismissed \textit{Refactoring} as something suited to less-experienced
 programmers; as some nice recipes for cleaning up your code, but nothing that
@@ -51,7 +51,7 @@ comfortable than the one the house had. My wife needed a Room Of Her Own.
 We did not want to pay for an expensive architect, and neither of us knew
 anything about construction. How would we design our house?
 
-At times, while browsing the web, I'll sometimes remember that I have seen the
+At times, while browsing the web, I will sometimes remember that I have seen the
 name of a certain author before, or the title of a book, or something like that.
 I may have not really paid attention to it in the past, but somehow, the more
 times I see the same thing mentioned, the more likely it is that I will get
@@ -69,8 +69,8 @@ went to various places around the world, trying to see if there were reasons for
 why there are human-built places in the world (cities, towns, parks, buildings,
 houses) where it is very pleasant to be, those that are comfortable, livable,
 and \textit{nice}, and some places where this is not the case. The pleasant
-places were present in all of the traditional architectures of the world -
-European, African, Asian, American - which pointed to the idea of being able to
+places were present in all of the traditional architectures of the world --
+European, African, Asian, American -- which pointed to the idea of being able to
 extract common factors from all of them.
 
 Alexander and his team distilled their findings into a list of good
@@ -109,7 +109,7 @@ only reach the bathroom by first crossing the bedroom. Visits are always awkward
 because you feel like you need to tidy up your room first, if you intend your
 visitors to be able to use the WC! Or consider an office, where you do not want
 a quiet work space to be right next to the reception, because then it will not
-be quiet at all - you want it to be more private, towards the back.
+be quiet at all -- you want it to be more private, towards the back.
 
 \paragraph*{Summary of the solution:}
 Lay out the spaces of a building so that they create a sequence which begins
@@ -132,7 +132,7 @@ constrain your implementation in unnecessary ways. The patterns do not mandate
 a particular style, nor include superfluous decorations: the book does not tell
 you, ``make this shape of flourishes in the handrails''; instead it tells you,
 ``a house should have its rooms placed such that sunlight enters them according
-to the time of the day in which they are most used - East for the bedrooms in
+to the time of the day in which they are most used -- East for the bedrooms in
 the morning, West for the living room in the afternoon''.
 
 I had gotten a copy of \textit{A Pattern Language} shortly before starting the
@@ -141,7 +141,7 @@ approach the design of our house, and now we could do it ourselves instead of
 paying a lot of money for an inadequate solution. We were able to make up a
 rough plan for our house, and then figure out smaller details as the
 construction went on. This is the kind of book that, as you read it, manages to
-confirm intuitive ideas that you half-knew you had - the kind of book where you
+confirm intuitive ideas that you half-knew you had -- the kind of book where you
 find yourself saying, ``of course, this is completely how I thought it should
 be'' all the time.
 
@@ -151,8 +151,8 @@ thing: to make a list of problems that appear frequently when programming, and
 to present good solutions for them, that would not constrain your implementation
 unnecessarily.
 
-One thing that I realized while reading \textit{A Pattern Language} - a valuable
-thing from both lists of patterns, the architectural and the software one, is
+One thing that I realized while reading \textit{A Pattern Language} (a valuable
+thing from both lists of patterns, the architectural and the software one) is
 that they give us a vocabulary to talk about how things are constructed. It is
 much more convenient to say, ``this object has listeners for its properties'',
 than ``this object lets you hook callback functions that are called when its
@@ -174,7 +174,7 @@ everything is lovingly made.
 
 A thing or place has the Quality Without A Name if it is comfortable, has
 evolved over time in its own terms, is free of inner contradictions, does not
-try to draw attention to itself, and seems to have archetypal qualities - like
+try to draw attention to itself, and seems to have archetypal qualities -- like
 if it were the way that thing was supposed to be built. Most importantly,
 Alexander asserted that this is an objective quality, not a subjective one, and
 that it can be measured and compared. Although this seems like a very vague
@@ -213,7 +213,7 @@ in 1964 when he was doing a study for the [San Francisco] Bay Area Rapid Transit
 (Alexander 1964), which in turn was based on his Ph.D. dissertation. One of the
 key ideas in this book was that in a good design there must be an underlying
 correspondence between the structure of the problem and the structure of the
-solution - good design proceeds by writing down the requirements, analyzing
+solution -- good design proceeds by writing down the requirements, analyzing
 their interactions on the basis of potential misfits, producing a hierarchical
 decomposition of the parts, and piecing together a structure whose
 \begin{quote}
@@ -226,24 +226,12 @@ being able to get change, being able to move past people waiting in line to get
 tickets, and not having to wait too long for tickets. What he noticed, though,
 was that certain parts of the system were not subject to these requirements and
 that the system itself could become bogged down because these other forces -
-forces not subject to control by requirements - acted to come to their own
+forces not subject to control by requirements -- acted to come to their own
 balance within the system. For example, if one person stopped and another also
 stopped to talk with the first, congestion could build up that would defeat the
 mechanisms designed to keep traffic flow smooth. Of course there was a
 requirement that there not be congestion, but there was nothing the designers
-could do to prevent this by means of a designed mechanism.                     
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                              
+could do to prevent this by means of a designed mechanism.
 \end{quote} 
 As a programmer, does this sound familiar?  You can make a beautiful, thorough
 design, that crumbles down when you actually build it because things emerge that
@@ -286,8 +274,8 @@ towns, or buildings, or any man-made thing in fact. He arrived at the following
 conclusions:
 \begin{itemize}
  \item Nature creates things that all have about 15 properties in common (I will
-show you later). This happens solely through natural processes - standard
-physics and chemistry - although it is not quite clear why very different
+show you later). This happens solely through natural processes -- standard
+physics and chemistry -- although it is not quite clear why very different
 processes produce similar results.
  \item Traditional architectures, or towns which just evolved over time, also
 have those properties. You can derive all the patterns in \textit{A Pattern
@@ -388,7 +376,7 @@ variable, as needed. By having a producer/consumer, or notifier/listener, you
 have local symmetries, deep interlock and ambiguity, and good shape.
 
 Richard Gabriel, one of the principal figures in Common Lisp, studied how to
-apply Alexander's theories to software (and also to poetry, and isn't code
+apply Alexander's theories to software (and also to poetry, and is code not
 similar to poetry after all?). He gives the following example:
 \begin{enumerate}
  \item Imagine that you write a PhoneCall class. This is a latent center, not as
@@ -410,7 +398,7 @@ that you should split that into half calls tied by a protocol.
      \includegraphics[scale=0.6,keepaspectratio=true]{./usability/federico3.png}
    \end{figure}
  You have local symmetry, levels of scale, boundaries, deep interlock and
-ambiguity - and this is where Meszaros left things.
+ambiguity -- and this is where Meszaros left things.
  \item Richard Gabriel then suggests strengthening the centers that exist by
 applying other structure-preserving transformations. What about the latent
 center in the middle?
@@ -429,9 +417,9 @@ local symmetries, retains deep interlock and ambiguity, and it is composable.
 structure-preserving transformations.
 \end{enumerate}
 Probably every programmer keeps a mental picture of the program he is creating
-or modifying - the hard part of modifying code that you did not write is forming
+or modifying. The hard part of modifying code that you did not write is forming
 that mental picture in the first place. When you work to make the code present a
-more beautiful picture, your code becomes better - and Alexander gives us a good
+more beautiful picture, your code becomes better -- and Alexander gives us a good
 way to do that.
 
 \section*{The fundamental process}
@@ -443,7 +431,7 @@ construct. It does not matter if you start with an existing program or building
 or city, or whether you are starting from scratch. We mimic nature's own
 evolutions and regenerative processes, but we do it faster.
 \begin{enumerate}
- \item Start with what you have - an empty lot, or an already-built building, or
+ \item Start with what you have -- an empty lot, or an already-built building, or
 a program that looks ugly and is hard to use.
  \item Identify the centers that exist in that space. Find the weakest center or
 the least coherent.
@@ -471,7 +459,7 @@ Similarly, Alexander is against making detailed, up-front designs. He gives a
 good argument of why pre-made designs can not work well in the end: because you
 can not predict absolutely everything that will come up during construction or
 implementation; because you will miss details of the environment into which your
-creation will live; because Nature itself is not pre-ordained, and rather it
+creation will live; because nature itself is not pre-ordained, and rather it
 grows organically and mercilessly evolves things until they manage to survive by
 themselves.
 
@@ -492,7 +480,7 @@ environments or structures that are built according to that method all end up
 having the Quality Without A Name. He calls this \textbf{living structure}. It
 can be measured and compared. It no longer has no name; we can now speak of
 environments with more or less living structure than others, or of programs with
-more or less living structure than others - and we strive to make have more of
+more or less living structure than others -- and we strive to make and have more of
 that property.
 
 I just called this essay, "Software that has the Quality Without A Name" because
