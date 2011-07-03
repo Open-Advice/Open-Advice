@@ -1,30 +1,134 @@
 \chapter{Jeff Mitchell}
 \todo{bio}
 \todo{title}
-A few days ago, I was part of a group interviewing a potential new sysadmin at work. We’d gone through a few dozen resumes and had finally brought our first candidate in for an interview. The candidate -- let’s call him John -- had experience with smaller, lab-style computer clusters as well as larger data center operations. At first, things were proceeding apace, except that he had an odd answer to a few of our questions: “I’m a sysadmin.”
-The meaning of that statement wasn’t immediately clear to us, until the following exchange occurred:
+A few days ago, I was part of a group interviewing a potential new sysadmin at
+work. We’d gone through a few dozen resumes and had finally brought our first
+candidate in for an interview. The candidate -- let’s call him John -- had
+experience with smaller, lab-style computer clusters as well as larger data
+center operations. At first, things were proceeding apace, except that he had an
+odd answer to a few of our questions: “I’m a sysadmin.”
+The meaning of that statement wasn’t immediately clear to us, until the
+following exchange occurred:
 
-Me: So you’ve said that you don’t have Cisco IOS experience, but what about networking in general?
+Me: So you’ve said that you don’t have Cisco IOS experience, but what about
+networking in general?
 John: Well, I’m a sysadmin.
-Me: Right, but -- how about networking concepts? Routing protocols like BGP or OSPF, VLANs, bridges...
+Me: Right, but -- how about networking concepts? Routing protocols like BGP or
+OSPF, VLANs, bridges...
 John, exasperated: I’m a sysadmin.
 
-That was when the light bulb came on. John hadn’t been telling us that he knew of the various things we were asking about because he’s a sysadmin; he was telling us that because he was a sysadmin he didn’t know about those things. John was a systems administrator; claiming such was his hand-waving way of indicating that those tasks belonged to network administrators.
+That was when the light bulb came on. John hadn’t been telling us that he knew
+of the various things we were asking about because he’s a sysadmin; he was
+telling us that because he was a sysadmin he didn’t know about those things.
+John was a systems administrator; claiming such was his hand-waving way of
+indicating that those tasks belonged to network administrators.
 John didn’t get the job.
 
-For many open source projects, specialization is a curse, not a blessing. Whether a project falls into one category or another often depends on the size of the development team; specialization to the degree of single points of failure can mean serious disruption to a project in the event of a developer leaving, whether on good, bad or unfortunate terms. It is no different for open source project sysadmins, although the general scarcity of these seems to allow projects to adopt sometimes dangerous tolerances.
-The most ridiculous example I’ve seen involved one particular project whose documentation site (including all of their installation and configuration documentation) was down for over a month. The reason? The server had crashed, and the only person with access to that server was sailing around on a pirate ship with members of Sweden’s Pirate Party. That really happened.
-However, not all single points of failure are due to absentee system administrators; some are artificial. One large project’s system administration access rights decisions were handled by a single lead administrator, who not only reserved some access rights solely for himself (yes, he did disappear for a while and yes, that did cause problems) but made decisions about how access rights should be given out based on whether he personally trusted the candidate. “Trust” in this case was based on one thing; it was not based on how many community members vouched for that person, how long that person had been an active and trusted contributor to that project, or even how long he had known that individual as a part of that project. Rather, it was based on how well he personally knew someone, by which he meant how well he knew that individual in person. Imagine how well that scales to a distributed global team of system administrators.
-Of course, this example only goes to show that it is very difficult for open source sysadmins to walk the line between security and capability. Large corporations can afford redundant staff, even when those staff are segmented into different responsibilities or security domains. Redundancy is important, but what if the only current option for redundant system administration is taking the first guy that randomly pops into your IRC channel and volunteers to help? How can you reasonably trust that person, their skills, or their motives?
-Unfortunately, only the project’s contributors, or some subset of them, can determine when the right person has come along. The universe of open source projects, their needs, and those willing to contribute to any particular project is blissfully diverse; as a result, human dynamics, trust, intuition, and how to apply them to any particular open source project are broad topics that are far out of scope of this short essay.
+For many open source projects, specialization is a curse, not a blessing.
+Whether a project falls into one category or another often depends on the size
+of the development team; specialization to the degree of single points of
+failure can mean serious disruption to a project in the event of a developer
+leaving, whether on good, bad or unfortunate terms. It is no different for open
+source project sysadmins, although the general scarcity of these seems to allow
+projects to adopt sometimes dangerous tolerances.
+The most ridiculous example I’ve seen involved one particular project whose
+documentation site (including all of their installation and configuration
+documentation) was down for over a month. The reason? The server had crashed,
+and the only person with access to that server was sailing around on a pirate
+ship with members of Sweden’s Pirate Party. That really happened.
+However, not all single points of failure are due to absentee system
+administrators; some are artificial. One large project’s system administration
+access rights decisions were handled by a single lead administrator, who not
+only reserved some access rights solely for himself (yes, he did disappear for a
+while and yes, that did cause problems) but made decisions about how access
+rights should be given out based on whether he personally trusted the candidate.
+“Trust” in this case was based on one thing; it was not based on how many
+community members vouched for that person, how long that person had been an
+active and trusted contributor to that project, or even how long he had known
+that individual as a part of that project. Rather, it was based on how well he
+personally knew someone, by which he meant how well he knew that individual in
+person. Imagine how well that scales to a distributed global team of system
+administrators.
+Of course, this example only goes to show that it is very difficult for open
+source sysadmins to walk the line between security and capability. Large
+corporations can afford redundant staff, even when those staff are segmented
+into different responsibilities or security domains. Redundancy is important,
+but what if the only current option for redundant system administration is
+taking the first guy that randomly pops into your IRC channel and volunteers to
+help? How can you reasonably trust that person, their skills, or their motives?
+Unfortunately, only the project’s contributors, or some subset of them, can
+determine when the right person has come along. The universe of open source
+projects, their needs, and those willing to contribute to any particular project
+is blissfully diverse; as a result, human dynamics, trust, intuition, and how to
+apply them to any particular open source project are broad topics that are far
+out of scope of this short essay.
 
-One key thing has made walking that security/capability line far easier, however: the rise of distributed version control systems, or DVCSes.
-In the past, access control was paramount because the heart of any open source project -- its source code -- was centralized. I realize that many out there will now be thinking “Jeff, you should know better than that; the heart of a project is its community, not its code!” My response is simple: community members come and go, but if someone accidentally runs “rm -rf” on the entire centralized VCS tree of your project, how many of those community members are going to be willing to stick around and help recreate everything from scratch? A project’s code is its heart; its community members are its lifeblood. Without either, you’re going to have a hard time keeping a project alive. Maybe you’ll be lucky and be able to cobble together the entire source tree from checkouts that different people had of different parts of the tree, but you’ll still have lost all of your history, which for many projects is nearly as important as the current code.
-That’s no longer the case. When every local clone has all of the history for a project and nightly backups can be performed by having a cron job run e.g. “git pull”, the centralized repository is now just a coordination tool. This takes its status down a few notches. It still has to be protected against threats both internal and external: unpatched systems are still vulnerable to known exploits, a malicious sysadmin can still wreak havoc, an ineffective authentication system can allow malicious code into your codebase, and an accidental “rm -rf” of the centralized repository can still cause loss of developer time. But these challenges can be overcome, and in the day and age of cheap VPS and data center hosting, absentee sysadmins can be overcome too. (Better make sure you have redundant access to DNS, though! Oh, and, put your websites in a DVCS repository too, and make branches for local modifications. You’ll thank me later.)
-So, DVCSes give your project redundant hearts nearly for free, which is a great way to help open source sysadmins sleep at night and makes us all feel a little bit more like Time Lords. It also means if you’re not on a DVCS, stop reading this very moment and go get on one. It’s not just about workflows and tools. If you care about the safety of your code and your project, you’ll switch.
+One key thing has made walking that security/capability line far easier,
+however: the rise of distributed version control systems, or DVCSes.
+In the past, access control was paramount because the heart of any open source
+project -- its source code -- was centralized. I realize that many out there
+will now be thinking “Jeff, you should know better than that; the heart of a
+project is its community, not its code!” My response is simple: community
+members come and go, but if someone accidentally runs “rm -rf” on the entire
+centralized VCS tree of your project, how many of those community members are
+going to be willing to stick around and help recreate everything from scratch? A
+project’s code is its heart; its community members are its lifeblood. Without
+either, you’re going to have a hard time keeping a project alive. Maybe you’ll
+be lucky and be able to cobble together the entire source tree from checkouts
+that different people had of different parts of the tree, but you’ll still have
+lost all of your history, which for many projects is nearly as important as the
+current code.
+That’s no longer the case. When every local clone has all of the history for a
+project and nightly backups can be performed by having a cron job run e.g. “git
+pull”, the centralized repository is now just a coordination tool. This takes
+its status down a few notches. It still has to be protected against threats both
+internal and external: unpatched systems are still vulnerable to known exploits,
+a malicious sysadmin can still wreak havoc, an ineffective authentication system
+can allow malicious code into your codebase, and an accidental “rm -rf” of the
+centralized repository can still cause loss of developer time. But these
+challenges can be overcome, and in the day and age of cheap VPS and data center
+hosting, absentee sysadmins can be overcome too. (Better make sure you have
+redundant access to DNS, though! Oh, and, put your websites in a DVCS repository
+too, and make branches for local modifications. You’ll thank me later.)
+So, DVCSes give your project redundant hearts nearly for free, which is a great
+way to help open source sysadmins sleep at night and makes us all feel a little
+bit more like Time Lords. It also means if you’re not on a DVCS, stop reading
+this very moment and go get on one. It’s not just about workflows and tools. If
+you care about the safety of your code and your project, you’ll switch.
 
-Source code redundancy is a must, and in general the greater amount of redundancy you can manage, the more robust your systems. It may also seem obvious that you want sysadmin redundancy; what you may not find obvious is that redundant sysadmins aren’t as important as redundant skillsets. John, the systems administrator, worked in data centers and companies with redundant sysadmins but rigid, defined skillsets. While that worked for large companies that could pay to acquire new sysadmins with particular skillsets on-demand, most open source projects don’t have that luxury. You have to make do with what you can get. This of course means that an alternative (and sometimes the only alternative) to finding redundant system administrators is spreading the load, having other project members each pick up a skill or two until redundancy is achieved.
-It’s no different from the developer or artwork side of a project; if half of your application is written in C++ and half is written in Python, and only one developer knows Python, a departure from the project by that developer will cause massive short-term problems and could cause serious long-term problems as well. Encouraging developers to branch out and become familiar with more languages, paradigms, libraries, and so on means that each of your developers becomes more valuable, which shouldn’t come as a shock; acquiring new skillsets is a byproduct of further education, and more educated personnel are more valuable.
-Most open source developers that I know find it a challenge and a pleasure to keep testing new waters, as that’s the behavior that led them to open source development in the first place. Similarly, open source system administrators are in scarce supply, and can’t afford to get stuck in a rut. New technologies relevant to the sysadmin are always emerging, and there are often ways to use existing or older technologies in novel ways to enhance infrastructure or improve efficiency.
-John wasn’t a good candidate because he brought little value; he brought little value because he had never pushed outside of his defined role. Open source sysadmins falling into that trap don’t just hurt the project they’re currently involved with, they reduce their value to other projects using different infrastructure technologies that could desperately use a hand; this decreases the overall capability of the open source community. To the successful open source administrator, there is no such thing as a comfort zone.
+Source code redundancy is a must, and in general the greater amount of
+redundancy you can manage, the more robust your systems. It may also seem
+obvious that you want sysadmin redundancy; what you may not find obvious is that
+redundant sysadmins aren’t as important as redundant skillsets. John, the
+systems administrator, worked in data centers and companies with redundant
+sysadmins but rigid, defined skillsets. While that worked for large companies
+that could pay to acquire new sysadmins with particular skillsets on-demand,
+most open source projects don’t have that luxury. You have to make do with what
+you can get. This of course means that an alternative (and sometimes the only
+alternative) to finding redundant system administrators is spreading the load,
+having other project members each pick up a skill or two until redundancy is
+achieved.
+It’s no different from the developer or artwork side of a project; if half of
+your application is written in C++ and half is written in Python, and only one
+developer knows Python, a departure from the project by that developer will
+cause massive short-term problems and could cause serious long-term problems as
+well. Encouraging developers to branch out and become familiar with more
+languages, paradigms, libraries, and so on means that each of your developers
+becomes more valuable, which shouldn’t come as a shock; acquiring new skillsets
+is a byproduct of further education, and more educated personnel are more
+valuable.
+Most open source developers that I know find it a challenge and a pleasure to
+keep testing new waters, as that’s the behavior that led them to open source
+development in the first place. Similarly, open source system administrators are
+in scarce supply, and can’t afford to get stuck in a rut. New technologies
+relevant to the sysadmin are always emerging, and there are often ways to use
+existing or older technologies in novel ways to enhance infrastructure or
+improve efficiency.
+John wasn’t a good candidate because he brought little value; he brought little
+value because he had never pushed outside of his defined role. Open source
+sysadmins falling into that trap don’t just hurt the project they’re currently
+involved with, they reduce their value to other projects using different
+infrastructure technologies that could desperately use a hand; this decreases
+the overall capability of the open source community. To the successful open
+source administrator, there is no such thing as a comfort zone.
  
