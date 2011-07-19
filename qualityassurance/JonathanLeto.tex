@@ -1,18 +1,10 @@
 \chapter{What I Wish I Would Have Known About Testing When I Started... -
 Jonathan "Duke" Leto}
 
-\textit{Jonathan "Duke" Leto is a software developer, published mathematician,
-git ninja and avid bicyclist living in Portland, Oregon. Duke is a core developer of Parrot Virtual Machine, board member of the Parrot Foundation and community manager. He helped create the PDX Hackathon user group and has been listed as one of the most influential coders in Portland, OR according to Github statistics.
-\newline
-Duke kicks ass in Google Summer of Code and Google Code-In as an organization
-administrator, which involves organizing dozens of mentors who are teaching
-brilliant high school and college students about FLOSS and how to integrate
-into FLOSS communities.
-\newline
-Duke is the founder of Leto Labs LLC and is currently a Bioinformatics
-Analyst at Boyce Thompson Insitute For Plant Research in Ithaca, New York. He
-received his Masters in Mathematics from University of Central Florida and
-enjoys discovering wheels within wheels.}\todo{can we shorten this a bit?}
+\textit{ Jonathan "Duke" Leto is a software developer, published mathematician,
+Git ninja and avid bicyclist living in Portland, Oregon. Duke is a core
+developer of Parrot Virtual Machine and founder of Leto Labs LLC \footnote{\url{http://labs.leto.net}} .
+}
 
 When I first got involved in Free and Open Source Software, I had no clue what
 tests were or why they were important. I had worked on some personal programming
@@ -128,7 +120,7 @@ but the terms are still useful to describe kinds of tests.
 \section*{Unit tests vs. integration tests}
 
 Unit tests and integration tests form a spectrum. Unit tests test small bits of
-code, and integration tests verify how more than one unit fit together. The test
+code, and integration tests verify how more than one unit fits together. The test
 writer gets to decide what comprises a unit, but most often it is at the level
 of a function or method, although some languages call those things by different
 names.
@@ -143,7 +135,9 @@ b$. An integration test is testing how multiple
 things integrate or work together, instead of how a single part works
 individually. If algebra isn't your thing, another way to look at it is unit
 tests only test one part of the machine at a time, but integration tests very
-many parts work in unison. A great example of an integration test is test-driving a car. You are not checking the air pressure, or measuring voltage of the spark plugs. You are making sure the vehicle works as a whole.
+many parts work in unison. A great example of an integration test is test-driving a car.
+You are not checking the air pressure, or measuring voltage of the spark plugs.
+You are making sure the vehicle works as a whole.
 
 Most of the time it is good to have both. I often start with unit tests and add
 integration tests as needed, since you will weed out the most basic bugs first,
