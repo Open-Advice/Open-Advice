@@ -27,6 +27,12 @@ On Debian-based systems, you can install "pdflatex" with:
 
     sudo apt-get install texlive-latex-extra
 
+## Issues
+
+    "File `todonotes.sty' not found."
+
+This means you need to run the above apt-get command, because you are missing one of the LaTeX extra packages.
+
 ## License
 
 The book and its content is licenced under CC-BY-SA. For questions about the
