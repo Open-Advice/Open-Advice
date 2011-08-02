@@ -22,7 +22,57 @@ the time, and that is what this essay is about.
 
 \section*{How to get things wrong}
 
-Part 1 text
+Lydia asked for a ''things I wish I had known when I got started'' style essay,
+so let me get started with the story of my first patches. I first got involved
+in real coding during the Google Summer of Code\texttrademark ~2005. The Wine
+project had accepted me to implement NTLM crypto based on some Samba-related
+tool. Wine is a single-committer project, meaning that only the lead developer,
+Alexandre Julliard, has commit access to the main repository. Back in 2005, Wine
+still was using CVS as it's version control. When the project started and I got
+the email that I was accepted, I got hold of my mentor on IRC and got to work.
+
+Coding away happily, I got the first features implemented. I produced a patch
+for my mentor to review. In the olden CVS days, you had to provide all the diff
+options manually, but I had read up on that part, I was prepared. \texttt{cvs
+diff -N -u > ntlm.patch} and I had the file I could send to my mentor. Actually
+this is one thing I did get right, and the first thing you should consider when
+you prepare a patch. The normal output from the diff command might be easier to
+read for a computer, but I never met a human who actually preferred the normal
+output over the ''unified diff'' output. Switched on by the \texttt{-u} flag, this
+makes diff use the \texttt{$+++$} and \texttt{$---$} notation. \todo{Add an
+example?}
+
+My newly created unified diff was sent at my mentor, who gave me a review and
+lots of things I could change. I fixed that stuff, and sent him a new diff
+shortly after. The code--review cycle continued for the whole duration of GSoC,
+with my patch growing and growing. When the ''pencils down'' date arrived, I had
+a huge monster patch with all my changes in there. Naturally I had a really hard
+time getting that patch reviewed, let alone committed. In the end, Alexandre
+refused to look at the patch further before I split it up. Wine policy requires
+that patches are small logical steps adding functionality. Each patch needs to
+do something useful \emph{and} compile.
+
+Now, splitting an existing huge patch up in pieces that individually make sense
+\emph{and} compile is a lot of work. It was even more work because the only way
+I knew this could be done was to write a small patch, create the diff, get that
+committed, update my local checkout and then write the next small patch. Shortly
+after I started sending my first small patches, Wine went into a one month
+feature freeze leading up to the 0.9.0 beta release. I was sitting on my next
+patch for a month before I could continue, and I eventually got my last patch in
+in November. I was totally frustrated with the whole experience and decided I
+didn't want to deal with the Wine community anymore.
+
+My frustration held up until people who were actually using my code were
+starting to ask questions about it in February 2006. My code was actually
+useful! They wanted more features as well. When Google went on to announce it
+would be doing GSoC again in 2006, my plans for the summer were clear. Now that
+Wine had switched to git in December 2005, I knew I wouldn't be held up by
+possible code freezes, as I finally could create all my small patches locally.
+Life was good.
+
+It wasn't until I stumbled over a git frontend (called porcelain in git-speak)
+that emulated the ''quilt'' behaviour that I learned that there were tools that
+could have made my life easier even in 2005.
 
 
 \section*{How NOT to get things wrong}
