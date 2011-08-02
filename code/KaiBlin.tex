@@ -77,8 +77,53 @@ could have made my life easier even in 2005.
 
 \section*{How NOT to get things wrong}
 
-Part 2 text
+After my tale of how I managed to get things wrong with regard to sending
+patches, let me continue with a few tips to avoid the pitfalls.
 
+\subsection*{Patch submission guidelines}
+
+The first tip I have is to read up on any patch submission guidelines the
+project you want to contribute might have. Those should actually be consulted
+before you start coding, along with any coding style guidelines the project has.
+
+\subsection*{Unified diffs}
+
+Even if not covered in the patch submission guidelines explicitly, you really,
+really want to send unified diff output. I have yet to meet a project that
+prefers the non-unified output of diff. Unified diffs make reviewing the patch
+so much easier. It's no accident that most modern version control programs
+automatically use that format in their ''diff'' command.
+
+\subsection*{Use distributed version control}
+
+Speaking of modern version control, you will want to use a DVCS to work on the
+code locally. Git or Mercurial are the most popular choices there, Bazaar might
+be worth a look as well. Even if the project you want to contribute to still
+uses a centralized version control, being able to commit your changes
+iteratively is a great thing. All of the mentioned distributed version control
+tools should be able to import commits from SVN or CVS. You could go and learn
+''quilt'', but seriously, the future is in the field of distributed version
+control.
+
+\subsection*{Small patches, doing one thing at a time}
+
+When I have to review patches, patches that are too big or that try to do many
+things at once are really annoying to deal with. Patches doing only one thing at
+a time are easier to review. Eventually, the will make your life easier when you
+finally need to debug the mistakes both the author and the reviewer of the patch
+missed.
+
+\subsection*{Track your patch}
+
+After you have submitted your patch, keep an eye on the communication channels
+of the project and on your patch. If you haven't gotten any feedback for a week,
+you should politely ask for feedback. Depending how the project handles patch
+submissions, a patch might get lost in the noise. Don't expect to get your patch
+committed in the first iteration, it usually takes a couple of tries to get used
+to the style of a new project. As a first-time contributor, nobody will blame
+you for this, provided you get most of the things right. Just make sure that you
+fix all of the things the developers indicated and send a second version of the
+patch.
 
 \section*{Conclusion}
 
