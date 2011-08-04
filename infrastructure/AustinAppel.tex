@@ -1,15 +1,15 @@
 \chapter{Backups to Maintain Sanity - Austin Appel}
-
+\todo{bio}
 Backups are good. Backups are great. A competent admin always keeps current
 backups.  This much can be gathered from any manual on server administration.
-The problem is that people have of backups is one of a purely defensive posture.
+The problem is that people have of backups is one of a purely defensive posture.\todo{Something is strange in this sentence.}
 If something drastic happens to the server or its data and one is forced to fall
 back on something, the backups will come to the rescue in the moment of most
 dire need. However, this should never happen, right?  If this indeed never
 happens, it really is just a waste of valuable (and often expensive) resources.
 
 Before going further, it is important to note that the advice espoused is for
-the smaller open source project server administrators out there – the silent
+the smaller open source project server administrators out there -- the silent
 majority. If you maintain services that would cause a large amount of
 frustration, and even perhaps harm if they experienced any downtime, please take
 this with a very small grain of salt.
@@ -25,11 +25,11 @@ necessary, to avoid risking dependency issues, broken code, or any of the other
 million things that could go wrong. The reason you are nervous is not because
 you may be inexperienced. It is important to know that you are not alone in
 this. Whether or not we admit it to others, many of us have been (and likely
-still are) in this position. The sad fact is that this inaction - stemming from
-the fear of breaking a 'working' system - leads to running services which are
+still are) in this position. The sad fact is that this inaction -- stemming from
+the fear of breaking a ``working'' system -- leads to running services which are
 often several versions behind the curve, and come with a host of potentially
 serious security vulnerabilities. So, blah blah blah transition to next
-paragraph.
+paragraph.\todo{write the bla bla ;-)}
 
 People tend to play a game differently when they have infinite lives as compared
 to needing to start over from the start as soon as one mistake is made. Why
@@ -40,14 +40,14 @@ command for yum, pacman, etc.), when armed with backups, one is free to update
 the packages on a server secure in the knowledge that the changes can always be
 rolled back if things turn sour. The key to getting over this is all about a
 state-of-mind. There is no reason to fear as long as you have your safety net of
-backed up files beneath you as you jump. After all, system administration is
+backed-up files beneath you as you jump. After all, system administration is
 constantly a learning experience.
 
-Of course, if you don't validate your backups, relying on backups in this way
+Of course, if you do not validate your backups, relying on backups in this way
 becomes a very dangerous game.  Fortunately, experienced system administrators
-know that the commandment 'keep current backups' is always followed by 'validate
-your backups.' Again, this is another mantra that people like to recite.  What
-doesn't fit as elegantly into a catchy mantra is how quickly and easily
+know that the commandment ``keep current backups'' is always followed by ``validate
+your backups.'' Again, this is another mantra that people like to recite.  What
+does not fit as elegantly into a catchy mantra is how quickly and easily
 validating backups can be accomplished. The best way to tell that a backup works
 is, of course, to restore it (preferably on an identical system not currently
 active). But again, in the absence of such luxuries, a bit more creativity is
