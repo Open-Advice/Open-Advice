@@ -1,54 +1,57 @@
 \chapter{Learn from your users - Guillaume Paumier}
 
+\todo{add some headddings to break it up?}
+\todo{Often uses “you” but it means both the user and “developers”. To confuse this, the author first refers to developers by name (e.g. “developers”) but then switches person reference and refers to developers as “you”. This is very confusing, especially if the reader is NOT a developer. Needs to rewrite all references of you to developer or SPECIFICALLY call you “If you were a developer, imagine...”}
+
 \textit{Guillaume Paumier is a photographer and physicist living in Toulouse,
-France. A long-time Wikipedian, he is currently working for the Wikimedia
+France. A long-time Wikipedian, he currently works for the Wikimedia
 Foundation, the non-profit that runs Wikipedia. As a product manager for
-Multimedia Usability, he notably conducted user research to design a new media
+Multimedia Usability\todo{Is Multimedia Usability a Wikipedia project? Should specify otherwise people wont know what it is.}, he notably conducted user research to design a new media
 upload system for Wikimedia Commons, the free media library associated with
 Wikipedia.}
 
-You know Wikipedia, the freely reusable encyclopedia that anyone can edit. It
+You know Wikipedia, the freely reusable encyclopedia that anyone can edit? It
 was created in 2001 and recently celebrated its tenth anniversary. Despite being
 one of the ten most visited websites in the world, its user interface still
-looks very ``1.0'', compared to what interactive web technologies allow. Some
+looks very ``1.0' compared to what interactive web technologies allow. Some
 might say it is for the best: Wikipedia is ``serious stuff'', and the user
-should not be distracted by fireworks in the interface. Yet, Wikipedia has had
-issues recruiting new participants in the last few years, in part because of its
-interface, that some may call archaic. This might explain why surveys of
+should not be distracted by ``fireworks'' in the interface. Yet, Wikipedia has had
+issues recruiting new participants\todo{Suggestion: change “recruiting new participants” to “recruiting new contributors”} in the last few years, in part because of its
+interface that some may call archaic. This might explain why surveys of
 Wikipedia participants have repeatedly shown a bias towards young,
 technology-savvy men, many with a background in computers and engineering.
 Besides the fact that free knowledge and free licenses sprouted from the fertile
 land of Free and Open Source Software, the complicated interface has discouraged
 many motivated potential participants.
 
-In 2011, when all the major online publishing and collaboration platforms (like
+In 2011, while major online publishing and collaboration platforms (like
 WordPress, Etherpad and Google Documents) offer a visual editor to some extent,
-Wikipedia is still using a many-year-old default wikitext editor that uses
+Wikipedia still uses by default an old-fashioned wikitext editor that uses
 quotes (\textquotesingle \textquotesingle \textquotesingle \textquotesingle) and
 brackets ([[]]) for formatting. Efforts are underway to transition to a default
 visual editor in 2012, but it is not an easy challenge to solve.
 
 But let us put the editor aside for a moment. The interface of Wikipedia remains
 fairly complicated, and many useful features are difficult to discover. Did you
-know Wikipedia had an integrated version control system, and you could see all
-the previous versions of a page? Did you know you could see the list of all the
-edits made by a participant? Did you know you could link to a specific version
-of a page? Did you know you could export a page to PDF, or create custom
+know Wikipedia has an integrated version control system, and you can see all
+the previous versions of a page? Did you know you can see the list of all the
+edits made by a participant? Did you know you can link to a specific version
+of a page? Did you know you can export a page to PDF, or create custom
 hardcover books from Wikipedia content, to be sent to your home?
 
 Most Wikipedia readers arrive through search engines. Statistics show they spend
-little time on Wikipedia, once they find the information they were looking for.
+little time on Wikipedia once they find the information they were looking for.
 Few stick around and explore what tools the interface offers. For example,
 Wikipedia is routinely criticized about its quality and reliability. Many of
 these unexplored, almost hidden tools could prove useful to readers to help them
 assess the reliability of information.
 
-Wikipedia and its sister projects are powered by a wiki engine called MediaWiki
+Wikipedia and its sister projects\todo{examples of sister projects} are powered by a wiki engine called MediaWiki
 (and supported by the Wikimedia Foundation; all these confusing names alone are
 a usability sin). For a long time, the development of MediaWiki was primarily
 led by software developers. The MediaWiki community has a strong developer base;
 actually, this community is almost entirely composed of developers. Only
-recently did designers join the community, and they were hired by the Wikimedia
+recently did designers join the community and they were hired by the Wikimedia
 Foundation in this capacity. There are hardly any volunteer designers in the
 community. This has caused the application to be built and ``designed''
 exclusively by developers. As a consequence, the interface has naturally taken a
@@ -57,26 +60,26 @@ software is implemented in the code and data structures. Only rarely does this
 implementation model match the ``user model'', i.e., the way the user imagines
 things to work.
 
-It would be unfair to say that developers do not care about users. The whole
-point of creating software (apart from the sheer pleasure of learning stuff,
+It would be unfair to say that developers do not care about users. The purpose
+of creating software (apart from the sheer pleasure of learning stuff,
 writing code and solving problems) is to release it so it can be used. This is
 particularly true in the world of Free and Open Source Software, where most
 developers selflessly volunteer their time and expertise. One might argue that
-many developers are, in fact, users of their own product, especially in the
-world of Free and Open Source software. After all, they created it, or joined
+many developers are, in fact, users of their own products, especially in the
+world of Free and Open Source software. After all, they created it or joined
 its team, for a reason, and this reason was rarely money. As a consequence,
 developers of this kind of software would be in an ideal position to know what
 the user wants.
-\newline
+
 But let's face it: you are not your regular user.
-\newline
-It is particularly hard for the developer to sit in the user's chair. For one
+
+It is particularly difficult for the developer to sit in the user's chair. For one
 thing, your familiarity with the code and the software's implementation makes
-you see its features and interface from a very specific, omniscient angle. You
+you see its features and interface from a very specific perspective. You
 know each and every feature of the application you created. You know where to
 find everything. If something with the interface feels a little odd, you may
 unconsciously discard it because you know it is a side-effect of how you
-implemented such or such feature.
+implemented such or such a feature.
 
 Let us say you are creating an application that stores data in tabular form
 (possibly in a database). When the time comes to show this data to the user, you
@@ -101,7 +104,7 @@ use your application is truly an eye-opening experience.
 Now, one way to watch people use your application is to hire a usability firm,
 who will recruit testers with various profiles among a pool of thousands,
 prepare an interview script, rent a room in a usability lab with a
-screen-recording app, a video camera pointed at the tester, and you in a
+screen-recording app, a video camera pointed at the user, and you in a
 backroom behind a one-way glass, head-desking and swearing every time the user
 does something you think does not make any sense. If you can afford to do that,
 then by all means, do so. What you will learn will really change your
@@ -110,31 +113,33 @@ are just going to have to do it yourself. Just sit beside a user as they show
 you how they perform their tasks and go through their workflow. Be a silent
 observer: your goal is to observe, and note everything. Many things will
 surprise you. Once the user is done, you can go through your notes and ask
-questions to help you understand how they think. To know more about
+questions to help you understand how they think.
+
+To know more about
 do-it-yourself testing have a look at \textit{Don't Make Me Think: A Common
 Sense Approach to Web Usability} by Steve Krug, \textit{About Face 3: The
 Essentials of Interaction Design} by Alan Cooper, Robert Reimann and David
-Cronin and the OpenUsability project\footnote{\url{http://openusability.org}}.
+Cronin, and the OpenUsability project\footnote{\url{http://openusability.org}}.
 It can be a bit awkward for users to be watched, yet I bet many of them will
 happily volunteer to help you improve your application. Users who cannot
-contribute code are usually happy to find other ways to participate, and showing
+contribute code are usually happy to find other ways to participate in Free Software, and showing
 you how they use the software is a very easy way to do so. Users are generally
 grateful for the time you have spent developing the application, and they want
 to give back.
 
-You will need to keep in mind, though, that not everything your users request
+You will need to keep in mind, that not everything your users request
 can or should be done. Listen carefully to their stories: it is an opportunity
-for you to identify issues. But because a user requests a feature does not mean
-they really need that feature; maybe the best way to fix the issue underlying
-their feature request is to implement a completely different feature. Do not
-listen blindly to your users. But you probably knew that already. 
-\newline
+for you to identify issues. But just because a user requests a feature does not mean
+they really need that feature; perhaps the best way to fix the issue underlying
+their feature request is to implement a completely different feature. Take what
+your users say with a grain of salt. But you probably knew that already. 
+
 Oh, and by the way, do not ask your family, either.
-\newline
-No offense intended, I am sure your mom and dad and sisters and brothers are very nice people. But if you are creating an accounting application, and your sister has never done any accounting, she is going to be quite lost. You will spend more time explaining what double-entry bookkeeping is, than really testing your software. However, your mom, who bought herself a digital camera last year, can be an ideal tester if you are creating an application to manage digital photos, or to upload them to a popular online sharing platform. For your accounting application, you can ask one of your colleagues or friends who already knows a thing or two about accounting.
-\newline
+
+No offense intended, I am sure your mom and dad and sisters and brothers are very nice people. But if you are creating an accounting application, and your sister has never done any accounting, she is going to be quite lost. You will spend more time explaining what double-entry bookkeeping is, than really testing your software. However, your mom, who bought herself a digital camera last year, could be an ideal tester if you are creating an application to manage digital photos, or to upload them to a popular online sharing platform. For your accounting application, you could ask one of your colleagues or friends who already knows a thing or two about accounting.
+
 Ask different people, too.
-\newline
+
 For some cosmological reason, people will find endless ways to use and abuse
 your application, and break it in ways you would not think of in your worst
 nightmares. Some will implement processes and workflows with your application
@@ -142,7 +147,7 @@ that make absolutely no sense to you, and you will want to slam your head on
 your desk. Others will use your application in ways so smart, they will make you
 feel stupid. Try to listen to users with different profiles, who have different
 goals when they use your application.
-\newline
+
 Users are an unpredictable species. But they are on your side. Learn from them.
 
 \section*{If you remember nothing else, ...}
