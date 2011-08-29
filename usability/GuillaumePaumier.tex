@@ -1,6 +1,5 @@
 \chapter{Learn from your users - Guillaume Paumier}
 
-\todo{add some headddings to break it up?}
 \todo{Often uses “you” but it means both the user and “developers”. To confuse this, the author first refers to developers by name (e.g. “developers”) but then switches person reference and refers to developers as “you”. This is very confusing, especially if the reader is NOT a developer. Needs to rewrite all references of you to developer or SPECIFICALLY call you “If you were a developer, imagine...”}
 
 \textit{Guillaume Paumier is a photographer and physicist living in Toulouse,
@@ -16,7 +15,7 @@ one of the ten most visited websites in the world, its user interface still
 looks very ``1.0' compared to what interactive web technologies allow. Some
 might say it is for the best: Wikipedia is ``serious stuff'', and the user
 should not be distracted by ``fireworks'' in the interface. Yet, Wikipedia has had
-issues recruiting new participants\todo{Suggestion: change “recruiting new participants” to “recruiting new contributors”} in the last few years, in part because of its
+issues recruiting new contributors in the last few years, in part because of its
 interface that some may call archaic. This might explain why surveys of
 Wikipedia participants have repeatedly shown a bias towards young,
 technology-savvy men, many with a background in computers and engineering.
@@ -39,6 +38,8 @@ edits made by a participant? Did you know you can link to a specific version
 of a page? Did you know you can export a page to PDF, or create custom
 hardcover books from Wikipedia content, to be sent to your home?
 
+\section*{The Implementation Model}
+
 Most Wikipedia readers arrive through search engines. Statistics show they spend
 little time on Wikipedia once they find the information they were looking for.
 Few stick around and explore what tools the interface offers. For example,
@@ -46,7 +47,8 @@ Wikipedia is routinely criticized about its quality and reliability. Many of
 these unexplored, almost hidden tools could prove useful to readers to help them
 assess the reliability of information.
 
-Wikipedia and its sister projects\todo{examples of sister projects} are powered by a wiki engine called MediaWiki
+Wikipedia and its sister projects (like Wikisource and Wikimedia Commons)
+are powered by a wiki engine called MediaWiki
 (and supported by the Wikimedia Foundation; all these confusing names alone are
 a usability sin). For a long time, the development of MediaWiki was primarily
 led by software developers. The MediaWiki community has a strong developer base;
@@ -71,9 +73,11 @@ its team, for a reason, and this reason was rarely money. As a consequence,
 developers of this kind of software would be in an ideal position to know what
 the user wants.
 
-But let's face it: you are not your regular user.
+But let's face it: if you are reading this, you are not your regular user.
 
-It is particularly difficult for the developer to sit in the user's chair. For one
+\section*{The Developer Point Of View}
+
+If you are a developer, it is particularly difficult for you to sit in the user's chair. For one
 thing, your familiarity with the code and the software's implementation makes
 you see its features and interface from a very specific perspective. You
 know each and every feature of the application you created. You know where to
@@ -91,15 +95,18 @@ interface as well, perhaps as a list. However, another format may make more
 sense for the regular user, for example a set of sentences, a chart, or another
 visual representation.
 
-Another challenge is the level of expertise of developers. Because you want your
+Another challenge is your level of expertise. Because you want your
 application to be awesome, you are likely to do a lot of research to build it.
 In the end, you may not only become an expert in your application, but also an
 expert in your application's topic. Many of your users will not have (or need)
 that level of expertise, and they may be lost with the level of detail of some
 features, or be unfamiliar with some terms the layperson does not know.
 
-So, what can you do to fix it? Watch users. Seriously. Watching people as they
-use your application is truly an eye-opening experience.
+So, what can you do to fix it?
+
+\section*{Watch users. Seriously.}
+
+Watching people as they use your application is truly an eye-opening experience.
 
 Now, one way to watch people use your application is to hire a usability firm,
 who will recruit testers with various profiles among a pool of thousands,
@@ -136,9 +143,15 @@ your users say with a grain of salt. But you probably knew that already.
 
 Oh, and by the way, do not ask your family, either.
 
-No offense intended, I am sure your mom and dad and sisters and brothers are very nice people. But if you are creating an accounting application, and your sister has never done any accounting, she is going to be quite lost. You will spend more time explaining what double-entry bookkeeping is, than really testing your software. However, your mom, who bought herself a digital camera last year, could be an ideal tester if you are creating an application to manage digital photos, or to upload them to a popular online sharing platform. For your accounting application, you could ask one of your colleagues or friends who already knows a thing or two about accounting.
+No offense intended, I am sure your mom, dad, sisters and brothers are very nice people.
+But if you are creating an accounting application, and your sister has never done any accounting,
+she is going to be quite lost. You will spend more time explaining what double-entry bookkeeping is
+ than really testing your software. However, your mom, who bought herself a digital camera last year,
+could be an ideal tester if you are creating an application to manage digital photos, or to upload
+them to a popular online sharing platform. For your accounting application, you could ask one of
+your colleagues or friends who already knows a thing or two about accounting.
 
-Ask different people, too.
+\section*{Ask different people, too.}
 
 For some cosmological reason, people will find endless ways to use and abuse
 your application, and break it in ways you would not think of in your worst
