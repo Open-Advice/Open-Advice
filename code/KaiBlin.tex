@@ -33,14 +33,41 @@ the email that I was accepted, I got hold of my mentor on IRC and got to work.
 
 Coding away happily, I got the first features implemented. I produced a patch
 for my mentor to review. In the olden CVS days, you had to provide all the diff
-options manually, but I had read up on that part, I was prepared. \texttt{cvs
-diff -N -u > ntlm.patch} and I had the file I could send to my mentor. Actually
-this is one thing I did get right, and the first thing you should consider when
-you prepare a patch. The normal output from the diff command might be easier to
-read for a computer, but I never met a human who actually preferred the normal
-output over the unified diff output. Switched on by the \texttt{-u} flag, this
-makes diff use the \texttt{$+++$} and \texttt{$---$} notation. \todo{Add an
-example? Yes please!}
+options manually, but I had read up on that part.
+\mbox{\texttt{cvs diff -N -u > ntlm.patch}} and I had the file I could send to
+my mentor. Actually this is one thing I did get right, and the first thing you
+should consider when you prepare a patch. The normal output from the diff
+command might be easier to read for a computer, but I never met a human who
+actually preferred the normal output over the unified diff output. Switched on
+by the \texttt{-u} flag, this makes diff use the \texttt{$+++$} and
+\texttt{$---$} notation.
+
+\begin{figure}[!h]
+\rule{\textwidth}{0.3pt}
+
+For example, the following diff is the result of teaching the Python ''Hello,
+world!'' example program to greet the world in Swedish.
+
+\begin{verbatim}
+diff --git a/hello.py b/hello.py
+index 59dbef8..6334aa2 100644
+--- a/hello.py
++++ b/hello.py
+@@ -1,4 +1,4 @@
+ #!/usr/bin/env python
+ # vim: set fileencoding=utf-8
+
+-print "Hello, world!"
++print "Hallå, världen!"
+\end{verbatim}
+
+The line starting with \texttt{-} is the line being removed, the one starting
+with \texttt{+} is the one being added. The other lines are helping the
+\texttt{patch} tool to do it's job.
+
+\rule{\textwidth}{0.3pt}
+\caption{Example diff output}
+\end{figure}
 
 My newly created unified diff was sent to my mentor, who gave me a review and
 lots of things I could change. I fixed that stuff, and sent him a new diff
