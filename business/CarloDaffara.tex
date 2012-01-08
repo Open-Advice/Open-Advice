@@ -1,4 +1,5 @@
 \chapter{Free and Open Source-Based Business Models - Carlo Daffara}
+\todo{decide between floss foss fs and os and stick to it}
 
 \textit{Carlo Daffara is a researcher in the field of open source-based business
 models, collaborative development of digital artifacts, and open source software
@@ -20,8 +21,8 @@ source middleware working group of the Technical Committee on Scalable Computing
 few years ago. Today, that question has evolved into ``What are successful
 business strategies that can be implemented on top of Free Software?'' The
 question is not as gratuitous as it may seem, as many academic researchers still
-write this kind of text: ``Open-source software is deliberately developed outside of market mechanisms \dots\ fails to contribute to the creation of value in development, as opposed to the commercial software market \dots\ does not generate profit, income, jobs or taxes \dots\ The open-source licenses on the software aim to suppress any ownership claims to the software and prevent prices from being established for it. In the end, the developed software cannot be used to generate profit.'' [Koot 03] or [Eng 10] that claims that ``economists showed that real world open source collaborations rely on many different incentives such as education, signaling, and reputation.'' (without any mention of economic
-incentives". Is it possible to do better? Is there a reality behind the idea of
+write this kind of text: ``Open-source software is deliberately developed outside of market mechanisms \dots\ fails to contribute to the creation of value in development, as opposed to the commercial software market \dots\ does not generate profit, income, jobs or taxes \dots\ The open-source licenses on the software aim to suppress any ownership claims to the software and prevent prices from being established for it. In the end, the developed software cannot be used to generate profit.'' [Koot 03] or [Eng 10] claims that ``economists showed that real world open source collaborations rely on many different incentives such as education, signaling, and reputation.'' (without any mention of economic
+incentives).\todo{this sentence needs work} Is it possible to do better? Is there a reality behind the idea of
 Free/Open Source businesses?
 
 \section*{Open Source and Economic Realities}
@@ -29,12 +30,11 @@ Free/Open Source businesses?
 In most areas, the use of Free Software brings a substantial economic advantage,
 thanks to the shared development and maintenance costs, already described by
 researchers like Gosh, that estimated an average R\&D cost reduction of 36\%.
-The large share of ``internal'' Free Software deployments explains why some of the economic benefits are not perceived directly in the business service market, as shown by Gartner:\todo{image}
+The large share of ``internal'' Free Software deployments explains why some of the economic benefits are not perceived directly in the business service market.
 
-In a similar way, the FLOSSIMPACT study found in 2006 that firms contributing
-code to FLOSS projects have in total at least 570 thousand employees and annual
-revenue of 263B Euro [Gosh 06], thus making Open Source and Free Software among the most important ICT-based economic phenomenons. It is important also to recognize that a substantial percentage of this economic value is not immediately visible in the marketplace, as the majority of software is not developed with the intent of selling it (the so-called ``shrinkwrap'' software) but is developed for internal use only. As identified by the FISTERA EU thematic network in fact the majority of software is developed for internal use only:
-
+The FLOSSIMPACT study found in 2006 that companies contributing
+code to FLOSS projects have in total at least 570 thousand employees and an annual
+revenue of 263B Euro [Gosh 06], thus making Open Source and Free Software among the most important ICT-based economic phenomenons. It is also important to recognize that a substantial percentage of this economic value is not immediately visible in the marketplace, as the majority of software is not developed with the intent of selling it (the so-called ``shrinkwrap'' software) but is developed for internal use only. As identified by the FISTERA EU thematic network in fact the majority of software is developed for internal use only:\newline
 \begin{tabularx}{\textwidth}{|X|X|X|X|}
 \hline
 Region & Proprietary software licenses & Software services
@@ -58,7 +58,7 @@ directly through this ``internal'' development model.
 The basic idea behind business models is quite simple: I have something or can
 do something -- the ``value proposition'' -- and it is more economical to pay me to do or get this ``something'' instead of doing it yourself (sometimes it may even be impossible to find alternatives, as in natural or man-made monopolies, so the idea of doing it myself may not be applicable). 
 There are two possible sources for the value: a property (something that can be
-transferred) and efficiency (something that is inherent in what the company does, and how they do it). With Open Source, usually ``property'' is non-exclusive (with the exception of what is called ``Open Core'', where part of the code is not open at all, and that will be covered later in the article). Other examples of property are trademarks, patents, licenses \dots\ anything that may be transferred to another entity through a contract or legal transaction.
+transferred) and efficiency (something that is inherent in what the company does, and how they do it). With Open Source, usually ``property'' is non-exclusive (with the exception of what is called ``Open Core'', where some part of the code is not open at all, and that will be covered later in the article). Other examples of property are trademarks, patents, licenses \dots\ anything that may be transferred to another entity through a contract or legal transaction.
 Efficiency is the ability to perform an action with a lower cost (both tangible
 and intangible), and is something that follows the specialization in a work area
 or appears thanks to a new technology. Examples of the first are simply the
@@ -67,7 +67,7 @@ in it; the first time you install a complex system it may require a lot of effor
 
 These two aspects are the basis of all the business models that we have analyzed
 in the past; it is possible to show that all of them fall in a continuum between
-properties and efficiency:\todo{image}
+properties and efficiency.
 
 Among the results of our past research project, one thing that we found is that
 property-based projects tend to have lower contributions from the outside,
@@ -85,7 +85,7 @@ to the other side to increase contributions and reduce the engineering effort
 
 \section*{A Business Models Taxonomy}
 
-The EU FLOSSMETRICS study on Free Software-based business model created, after
+The EU FLOSSMETRICS study on Free Software-based business models created, after
 an analysis of more than 200 companies, a taxonomy of the main business models
 used by Open Source companies; the main models identified in the market are: 
 \begin{itemize}
@@ -104,7 +104,7 @@ additions.
 ``proprietary value-add''): this model distinguishes between a basic Free Software and a proprietary version, based on the Free Software one but with the addition of proprietary plug-ins. Most companies following such a model adopt the Mozilla Public License, as it allows explicitly this form of intermixing, and allows for much greater participation from external contributions without the same requirements for copyright consolidation as in dual licensing. The model has the intrinsic downside that the Free Software product must be valuable to be attractive for the users, i.e. it should not be reduced to ``crippleware'', yet at the same time should not cannibalize the proprietary product. This balance is difficult to achieve and maintain over time; also, if the software is of large interest, developers may try to complete the missing functionality in Free Software, thus reducing the attractiveness of the proprietary version and potentially giving rise to a full Free Software competitor that will not be limited in the same way.
  \item Product specialists: companies that created or maintain a specific
 software project and use a Free Software license to distribute it. The main
-revenues are provided from services like training and consulting (the“ITSC” ``ITSC'' class) and follow the original ``best code here'' and ``best knowledge here'' of the original EUWG classification [DB 00]. It leverages the assumption, commonly held, that the most knowledgeable experts on a software are those who have developed it, and this way can provide services with a limited marketing effort, by leveraging the free redistribution of the code. The downside of the model is that there is a limited barrier of entry for potential competitors, as the only investment that is needed is in the acquisition of specific skills and expertise on the software itself.
+revenues are provided from services like training and consulting and follow the original ``best code here'' and ``best knowledge here'' of the original EUWG classification [DB 00]. It leverages the assumption, commonly held, that the most knowledgeable experts on a software are those who have developed it, and this way can provide services with a limited marketing effort, by leveraging the free redistribution of the code. The downside of the model is that there is a limited barrier of entry for potential competitors, as the only investment that is needed is in the acquisition of specific skills and expertise on the software itself.
  \item Platform providers: companies that provide selection, support,
 integration and services on a set of projects, collectively forming a tested and
 verified platform. In this sense, even GNU/Linux distributions were classified
@@ -137,17 +137,17 @@ networks started offering Free Software-specific courses.
 version of a software package, and fund some consultant or software manufacturer
 to do the work. Later on, the resulting software is redistributed as Open Source
 to take advantage of the large pool of skilled developers who can debug and
-improve it. A good example is the Maemo platform, used by Nokia in its Mobile
+improve it. A good example is the Maemo platform, used by Nokia on its Mobile
 Internet Devices (like the N810); within Maemo, only 7.5\% of the code is
-proprietary, with a reduction in costs estimated in 228M\$ (and a reduction in
+proprietary, with a reduction in costs estimated around 228M\$ (and a reduction in
 time-to-market of one year). Another example is the Eclipse ecosystem, an
 integrated development environment (IDE) originally released as Free Software by
 IBM and later managed by the Eclipse Foundation. Many companies adopted Eclipse
 as a basis for their own product, and this way reduced the overall cost of
 creating a software product that provides in some way developer-oriented
 functionality. There is a large number of companies, universities and individual
-that participate in the Eclipse ecosystem; as an example:\todo{image} As
-recently measured, IBM contributes for around 46\% of the project, with
+that participate in the Eclipse ecosystem. As
+recently measured, IBM contributes around 46\% of the project, with
 individuals accounting for 25\%, and a large number of companies like Oracle,
 Borland, Actuate and many others with percentages that go from 1 to 7\%. This is
 similar to the results obtained from analysis of the Linux kernel, and show that
@@ -162,7 +162,7 @@ project, the HTML rendering engine that is at the basis of the Google Chrome
 browser, Apple Safari and is used in the majority of mobile devices. If we
 examine the contributions to the project, we can see that after a few months
 co-development resources quickly increase and can even surpass those of the
-project maintainer: \todo{image} The graph shows the amount of contributions
+project maintainer: \todo{rewrite to not need the graph - image will not look good in print} The graph shows the amount of contributions
 (patches) to the WebKit codebase by committers; as in the beginning the project
 was managed by Apple developers, it clearly shows that after little more than
 one year contributions from outside become larger - thus reducing the maintenance
@@ -189,16 +189,16 @@ majority of revenues from e-commerce sales of the affiliate ThinkGeek site.
 Some companies have more than one principal model, and thus are counted twice;
 in particular, most dual licensing companies are also selling support services,
 and thus are marked as both. Also, product specialists are counted only when
-there is a demonstrable participation of the company into the project as ``main
+there is a demonstrable participation of the company in the project as ``main
 committer''; otherwise, the number of specialists would be much greater, as some
-projects are the center of commercial support from many companies (good
+projects are the center of commercial support for many companies (good
 examples include OpenBravo or Zope).
 
 Another relevant consideration is the fact that platform providers, while
 limited in number, tend to have a much larger revenue rate than both specialists
 or open core companies. Many researchers are trying to identify whether there is
 a more ``efficient'' model among all those surveyed; what we found is that the
-most probable future outcome will be a continuous shift across model, with a
+most probable future outcome will be a continuous shift across models, with a
 long-term consolidation of development consortia (like the Eclipse or Apache
 consortium) that provide strong legal infrastructure and development advantages,
 and product specialists that provide vertical offerings for specific markets. 
@@ -206,7 +206,7 @@ and product specialists that provide vertical offerings for specific markets.
 \section*{Conclusions}
 
 Open Source not only allows for sustainable, and even very large market presence
-(RedHat is already quite near to 1B\$ in annual revenues) but also many
+(RedHat is already quite close to 1B\$ in annual revenues) but also many
 different models that are totally impossible with proprietary software. The fact
 that Free Software is a non-rival good also facilitates cooperation between
 companies, both to increase the geographic base and to be able to engage large
@@ -221,16 +221,8 @@ software.
 \section*{References}
 
 \begin{itemize}
- \item $[451 08]$ The 451 group, Open source is not a business model.
- \item $[Car 07]$ Carbone, P. Value Derived from Open Source is a Function of
-Maturity Levels, OCRI conference "Alchemy of open source businesses", 2007
  \item $[DB 00]$ Daffara, C. Barahona, J.B. Free Software/Open Source: Information
 Society Opportunities for Europe? working paper, \url{http://eu.conecta.it}
- \item $[Daf 06]$ Daffara, C. Sustainability of FLOSS-based business models, II
-Open Source World Conference, Malaga 2006
- \item $[Daf 06-2]$ Daffara, C. Introducing open source in industrial environments.
-3rd CALIBRE workshop
- \item $[Daf 07]$ Daffara, C. Business models in OSS-based companies. Accepted
 paper, OSSEMP workshop, Third international conference on open source. Limerick 2007
  \item $[ED 05]$ Evans Data, Open Source Vision report, 2005 
  \item $[Eng 10]$ Engelhardt S. Maurer S. The New (Commercial) Open Source: Does it
@@ -240,15 +232,7 @@ No. GSPP10-001, 2010
  \item $[Gosh 06]$ Gosh, et al. Economic impact of FLOSS on innovation and
 competitiveness of the EU ICT sector.
 \url{http://ec.europa.eu/enterprise/ict/policy/doc/2006-11-20-flossimpact.pdf}
- \item $[IDC 06]$ IDC, Open Source in Global Software: Market Impact, Disruption,
-and Business Models. IDC report, 2006
- \item $[Jul 06]$ Jullien N. (ed) New economic models, new software industry economy.
-RNTL report
  \item $[Koot 03]$ Kooths, S. Langenfurth, M. Kalwey, N. Open-Source Software:
 An Economic Assessment Technical report, Muenster Institute for Computational Economics
 (MICE), University of Muenster
- \item $[VH 03]$ Von Hippel, E. and G. von Krogh, Open Source Software and the
-``Private-Collective'' Innovation Model: Issues for Organizational Science.
-Organization Science, 2003. 14(2): p. 209-223
- \item $[VH 05]$ Von Hippel, E. Democratizing innovation. MIT press, 2005
 \end{itemize}
