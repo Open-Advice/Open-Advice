@@ -1,4 +1,32 @@
-\documentclass[a5paper,10pt]{memoir}
+\documentclass[a5paper,DIV=10,smallheadings,headsepline,headings=normal,cleardoubleempty,10pt]{scrbook}
+\usepackage{scrpage2}
+\newcommand{\authorbio}[1]{\setchapterpreamble{\textit{\small#1}\vspace{24pt}}}
+\renewcommand*{\chaptermarkformat}{}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0.5\baselineskip}}
+\renewcommand*{\chapterheadendvskip}{\vspace*{1\baselineskip}}
+\makeatletter
+\newcommand*{\orgichapter}{}
+\let\orgichapter\chapter
+\renewcommand*{\chapter}[1]{%
+  \gdef\chapterauthor{#1}%
+  \orgichapter
+}
+\renewcommand*{\chapterformat}{\thechapter\autodot\hskip 1pc}
+\newlength{\authorindent}
+\renewcommand*{\chapterheadendvskip}{%
+  \ifx\chapterauthor\@empty\else
+  \markright{\chapterauthor}%
+  \vskip\baselineskip\nobreak
+  \settowidth{\authorindent}{{%
+      \usekomafont{sectioning}\usekomafont{chapter}\chapterformat
+    }}%
+  \begin{flushright}\sffamily\hspace*{\authorindent}\chapterauthor\par\nobreak
+    \global\let\chapterauthor\@empty\end{flushright}
+  \fi
+  \noindent\par\nobreak\vskip 2\baselineskip%
+}
+\makeatother
+
 \usepackage[utf8]{inputenc}
 \usepackage{textcomp}
 \usepackage{graphicx}
@@ -35,14 +63,25 @@ pdfborder={0 0 0.5}
 }
 
 \hyphenation{pro-ject pro-jects Free-desk-top Wiki-pe-dia fund-rais-ing pro-spec-tus-es pro-vi-ders}
-\setlength{\cftpartnumwidth}{3em}
+%\setlength{\cftpartnumwidth}{3em}
 
 \title{Open Advice}
 \author{Editor: Lydia Pintscher}
 \date{\today}
 
+\pagestyle{scrheadings}
+\ohead[]{\headmark}
+\ihead[]{\pagemark}
+%\cfoot[]{Open Advise}
+\ifoot[]{ }
+\ofoot[]{ }
+
+% Avoid typographical unpleasantries
+\clubpenalty = 10000
+\widowpenalty = 10000 \displaywidowpenalty = 10000
+
 \begin{document}
-\chapterstyle{veelo}
+%\chapterstyle{veelo}
 \frontmatter
 \maketitle
 \newpage
