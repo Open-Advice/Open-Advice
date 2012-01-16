@@ -62,8 +62,12 @@ pdfborder={0 0 0.5}
 }
 \hyphenation{pro-ject pro-jects Free-desk-top Wiki-pe-dia fund-rais-ing pro-spec-tus-es pro-vi-ders}
 
-\title{Open Advice}
-\author{Editor: Lydia Pintscher}
+\newcommand{\booktitle}{Open Advise}
+\newcommand{\booksubtitle}{How Subtitles Make All the Difference}
+\newcommand{\bookauthor}{Lydia Pintscher (Editor)}
+\title{\booktitle}
+\subtitle{\booksubtitle}
+\author{\bookauthor}
 \date{\today}
 
 \pagestyle{scrheadings}
@@ -84,7 +88,16 @@ pdfborder={0 0 0.5}
 
 \begin{document}
 \frontmatter
-\extratitle{Open Advise}
+\begin{titlepage}
+\begin{flushright}
+\bookauthor\\
+\vspace{8em}
+{\Huge\bfseries\sffamily\booktitle}\\
+\vspace{1em}
+{\large\booksubtitle}
+\end{flushright}
+\end{titlepage}
+\extratitle{\booktitle}
 \uppertitleback{%
 The information in this book is distributed on an "As Is" basis, without warranty. While every precaution has been taken in the preparation of this work, neither the authors nor the editor or publishers shall have any liability to any person or entity with respect to any loss or damage caused or alledged to be caused directly or indirectly by the information contained in it.%
 }
