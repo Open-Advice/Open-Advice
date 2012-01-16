@@ -1,18 +1,17 @@
-\documentclass[a5paper,DIV=12,BCOR=9mm,headsepline,headings=normal,cleardoubleempty,10pt]{scrbook}
+\documentclass[a5paper,DIV=12,BCOR=9mm,headsepline,headings=small,cleardoubleempty,10pt]{scrbook}
 \usepackage{scrpage2}
 \newcommand{\authorbio}[1]{\setchapterpreamble{\textit{\small#1}\vspace{24pt}}}
 \renewcommand*{\chaptermarkformat}{}
 \renewcommand*{\chapterheadstartvskip}{\vspace*{0.5\baselineskip}}
 \renewcommand*{\chapterheadendvskip}{\vspace*{1\baselineskip}}
 \makeatletter
-\newcommand*{\orgichapter}{}
-\let\orgichapter\chapter
-\renewcommand*{\chapter}[1]{%
+\newcommand*{\chapterwithauthor}[1]{%
   \gdef\chapterauthor{#1}%
-  \orgichapter
+  \chapter
 }
 \renewcommand*{\chapterformat}{\thechapter\autodot\hskip 1pc}
 \newlength{\authorindent}
+\gdef\chapterauthor{}
 \renewcommand*{\chapterheadendvskip}{%
   \ifx\chapterauthor\@empty\else
   \markright{\chapterauthor}%
@@ -61,7 +60,6 @@ pdfborder={0 0 0.5}
   bookmarksnumbered=true,
   pdfpagelayout=TwoColumnRight
 }
-\usepackage[tocindentauto]{tocstyle}
 \hyphenation{pro-ject pro-jects Free-desk-top Wiki-pe-dia fund-rais-ing pro-spec-tus-es pro-vi-ders}
 
 \title{Open Advice}
@@ -90,7 +88,7 @@ ISBN:}
 \maketitle
 \input{foreword}
 \input{thankyou}
-\tableofcontents*
+\tableofcontents
 \listoftodos
 \mainmatter
 \input{ideasinnovation}
