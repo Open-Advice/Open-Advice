@@ -1,38 +1,12 @@
 \documentclass[a5paper,DIV=12,BCOR=9mm,headsepline,headings=small,cleardoubleempty,10pt]{scrbook}
 \usepackage{scrpage2}
-\newcommand{\authorbio}[1]{\setchapterpreamble{\textit{\small#1}\vspace{24pt}}}
-\renewcommand*{\chaptermarkformat}{}
-\renewcommand*{\chapterheadstartvskip}{\vspace*{0.5\baselineskip}}
-\renewcommand*{\chapterheadendvskip}{\vspace*{1\baselineskip}}
-\makeatletter
-\newcommand*{\chapterwithauthor}[1]{%
-  \gdef\chapterauthor{#1}%
-  \chapter
-}
-\renewcommand*{\chapterformat}{\thechapter\autodot\hskip 1pc}
-\newlength{\authorindent}
-\gdef\chapterauthor{}
-\renewcommand*{\chapterheadendvskip}{%
-  \ifx\chapterauthor\@empty\else
-  \markright{\chapterauthor}%
-  \vskip\baselineskip\nobreak
-  \settowidth{\authorindent}{{%
-      \usekomafont{sectioning}\usekomafont{chapter}\chapterformat
-    }}%
-  \begin{flushright}\sffamily\hspace*{\authorindent}\chapterauthor\par\nobreak
-    \global\let\chapterauthor\@empty\end{flushright}
-  \fi
-  \noindent\par\nobreak\vskip 2\baselineskip%
-}
-\makeatother
-
+\usepackage{Open-Advice}
 \usepackage[utf8]{inputenc}
 \usepackage{textcomp}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos, textsize=tiny]{todonotes}
 \usepackage{xmpincl}
 \includexmp{Open-Advice}
-\usepackage{cclicenses}
 \usepackage{tabularx}
 \usepackage[english]{babel}
 \usepackage[raiselinks=true,
@@ -45,8 +19,18 @@ plainpages=false,
 pdfpagelabels=true,
 pdfborder={0 0 0.5}
 ]{hyperref}
+
+% Meta data
+\newcommand{\booktitle}{Open Advise}
+\newcommand{\booksubtitle}{FOSS: What We Wish We had Known When We Started}
+\newcommand{\bookeditor}{Lydia Pintscher (Editor)}
+\newcommand{\bookyear}{2012}
+\newcommand{\bookisbn}{978-1-12345-123-9} %TODO
+\newcommand{\bookurl}{http://open-advice.org}
+\newcommand{\bookauthors}{Georg Greve, Armijn Hemel, Evan Prodromou, Markus Krötzsch, Felipe Ortega, Leslie Hawthorn, Kévin Ottens, Lydia Pintscher, Jeff Mitchell, Austin Appel, Thiago Macieira, Henri Bergius, Kai Blin, Ara Pulido, Andre Klapper, Jonathan Leto, Atul Jha, Rich Bowen, Anne Gentle, Shaun McCance, Runa Bhattacharjee, Guillaume Paumier, Federico Mena Quintero, Máirín Duffy Strode, Eugene Trounev, Robert Kaye, Jono Bacon, Alexandra Leisse, Jonathan Riddell, Thom May, Vincent Untz, Stuart Jarvis, Jos Poortvliet, Sally Khudairi, Nóirín Plunkett, Dave Neary, Gareth J. Greenaway, Selena Deckelmann, Till Adam, Frank Karlitschek, Carlo Daffara, Dr. Till Jaeger, Shane Couglan }
+
 \hypersetup{
-  pdfauthor={Lydia Pintscher},
+  pdfauthor={\bookauthors},
   pdftitle={Open Advice},
   pdfsubject={Open Source, Free Software},
   pdfkeywords={Open Source, Free Software},
@@ -61,14 +45,6 @@ pdfborder={0 0 0.5}
   pdfpagelayout=TwoColumnRight
 }
 \hyphenation{pro-ject pro-jects Free-desk-top Wiki-pe-dia fund-rais-ing pro-spec-tus-es pro-vi-ders}
-
-\newcommand{\booktitle}{Open Advise}
-\newcommand{\booksubtitle}{FOSS: What We Wish We had Known When We Started}
-\newcommand{\bookauthor}{Lydia Pintscher (Editor)}
-\title{\booktitle}
-\subtitle{\booksubtitle}
-\author{\bookauthor}
-\date{\today}
 
 \pagestyle{scrheadings}
 \ohead[]{\headmark}
@@ -85,39 +61,12 @@ pdfborder={0 0 0.5}
 \clubpenalty = 10000
 \widowpenalty = 10000
 \displaywidowpenalty = 10000
+% Avoids line-overshooting at the cost of "Word-like" spacing
+\setlength{\emergencystretch}{0.25em}
 
 \begin{document}
 \frontmatter
-\begin{titlepage}
-\begin{flushright}
-\bookauthor\\
-\vspace{10em}
-{\Huge\bfseries\sffamily\booktitle}\\
-\vspace{2em}
-{\large\sffamily\booksubtitle}
-\end{flushright}
-\end{titlepage}
-\extratitle{\booktitle}
-\uppertitleback{%
-The information in this book is distributed on an "As Is" basis, without warranty. While every precaution has been taken in the preparation of this work, neither the authors nor the editor or publishers shall have any liability to any person or entity with respect to any loss or damage caused or alledged to be caused directly or indirectly by the information contained in it.%
-}
-
-\lowertitleback{%
-\textcopyright\ 2012 Georg Greve, Armijn Hemel, Evan Prodromou, Markus Krötzsch, Felipe Ortega, Leslie Hawthorn, Kévin Ottens, Lydia Pintscher, Jeff Mitchell, Austin Appel, Thiago Macieira, Henri Bergius, Kai Blin, Ara Pulido, Andre Klapper, Jonathan Leto, Atul Jha, Rich Bowen, Anne Gentle, Shaun McCance, Runa Bhattacharjee, Guillaume Paumier, Federico Mena Quintero, Máirín Duffy Strode, Eugene Trounev, Robert Kaye, Jono Bacon, Alexandra Leisse, Jonathan Riddell, Thom May, Vincent Untz, Stuart Jarvis, Jos Poortvliet, Sally Khudairi, Nóirín Plunkett, Dave Neary, Gareth J. Greenaway, Selena Deckelmann, Till Adam, Frank Karlitschek, Carlo Daffara, Dr. Till Jaeger, Shane Couglan \\
-\newline
-\fbox{\parbox{\textwidth}{
-\begin{center}{\huge \cc\bysa\\}\end{center}
-This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license visit: \url{http://creativecommons.org/licenses/by-sa/3.0/legalcode}.
-\vspace{0.25em}
-}}
-\newline \\
-Visit \url{http://open-advice.org} to download this book as PDF or eBook and receive additional information.
-\newline \\
-ISBN: 978-1-12345-123-9%
-}
-
-\dedication{for giants and those who will stand on their shoulders}
-\maketitle
+\input{topmatter}
 \input{foreword}
 \input{thankyou}
 \tableofcontents

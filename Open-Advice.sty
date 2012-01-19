@@ -1,0 +1,24 @@
+\newcommand{\authorbio}[1]{\setchapterpreamble{\textit{\small#1}\vspace{24pt}}}
+\renewcommand*{\chaptermarkformat}{}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0.5\baselineskip}}
+\renewcommand*{\chapterheadendvskip}{\vspace*{1\baselineskip}}
+\makeatletter
+\newcommand*{\chapterwithauthor}[1]{%
+  \gdef\chapterauthor{#1}%
+  \chapter
+}
+\renewcommand*{\chapterformat}{\thechapter\autodot\hskip 1pc}
+\newlength{\authorindent}
+\gdef\chapterauthor{}
+\renewcommand*{\chapterheadendvskip}{%
+  \ifx\chapterauthor\@empty\else
+  \markright{\chapterauthor}%
+  \vskip\baselineskip\nobreak
+  \settowidth{\authorindent}{{%
+      \usekomafont{sectioning}\usekomafont{chapter}\chapterformat
+    }}%
+  \begin{flushright}\sffamily\hspace*{\authorindent}\chapterauthor\par\nobreak
+    \global\let\chapterauthor\@empty\end{flushright}
+  \fi
+  \noindent\par\nobreak\vskip 2\baselineskip%
+}
