@@ -1,8 +1,39 @@
+default: pdf
+all: pdf mobi epub
 
-Open-Advice:
-	pdflatex Open-Advice
+# 10-12" screen readers, tablets, etc
+pdf: Open-Advice.pdf
+
+# only really useful as a e-reader pre-stage
+html: Open-Advice.html
+
+# recommended for Amazon Kindle 7/8" screen readers
+mobi: Open-Advice.mobi
+
+# for everyone elses 7/8" screen readers
+epub: Open-Advice.epub
+
+####### Helpers #######
+
+%.pdf: %.tex
+	pdflatex $<
+	pdflatex $<
+
+%.html:	%.tex
+	htlatex $<
+
+%.epub:	%.html
+	# requires calibre
+	ebook-convert $< $(basename $<).epub
+
+%.mobi:	%.html
+	# requires calibre
+	ebook-convert $< $(basename $<).mobi
 
 clean:
 	-rm -rf Open-Advice.pdf Open-Advice.log Open-Advice.toc Open-Advice.aux
 	-rm -rf Open-Advice.out Open-Advice.tdo Open-Advice.xmpi
+	-rm -rf Open-Advice*.html Open-Advice.css Open-Advice.4* Open-Advice.idv
+	-rm -rf Open-Advice.lg Open-Advice.dvi Open-Advice.tmp Open-Advice.toc Open-Advice.xref
+	-rm -rf Open-Advice.epub Open-Advice.mobi
 	-find . -name "*.aux" -and -not -path ./.git -prune | xargs rm
