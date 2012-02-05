@@ -1,12 +1,30 @@
-*.aux
-*.kilepr
-*~
-*.log
+# artifacts
 *.pdf
+*.epub
+*.mobi
+
+# projects and editors
 *.tdo
 *.toc
 *.out
 *.backup
 *.kate-swp
 *.sw?
+*.kilepr
+*~
+
+# (pdf)latex
 *.xmpi
+*.aux
+*.log
+
+# htlatex
+*.html
+*.css
+*.sty
+*.tmp
+*.4??
+*.lg
+*.xref
+*.dvi
+*.idv
