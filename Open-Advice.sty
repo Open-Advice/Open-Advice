@@ -1,11 +1,25 @@
-\newcommand{\authorbio}[1]{\setchapterpreamble{\textit{\small#1}\vspace{24pt}}}
+\newif\ifusinght
+\makeatletter
+\@ifundefined{HCode}{\usinghtfalse}{\usinghttrue}
+\makeatother
+
+\newcommand{\authorbio}[1]{\vspace{-14pt}\noindent\textit{#1}\vspace{14pt}\noindent}
+\usepackage{ifthen}
+\ifusinght
+  \newcommand*{\chapterwithauthor}[3][\empty]{%
+    \ifthenelse{\equal{#1}{\empty}}
+    {\chapter{#3}{#2}}%
+    {\chapter[#1]{#3}{#2}}%
+  }
+\else
 \renewcommand*{\chaptermarkformat}{}
 \renewcommand*{\chapterheadstartvskip}{\vspace*{0.5\baselineskip}}
 \renewcommand*{\chapterheadendvskip}{\vspace*{1\baselineskip}}
 \makeatletter
-\newcommand*{\chapterwithauthor}[1]{%
-  \gdef\chapterauthor{#1}%
-  \chapter
+\newcommand*{\chapterwithauthor}[3][\empty]{%
+  \ifthenelse{\equal{#1}{\empty}}
+  {\gdef\chapterauthor{#2}\chapter{#3}}%
+  {\gdef\chapterauthor{#2}\chapter[#1]{#3}}%  
 }
 \renewcommand*{\chapterformat}{\thechapter\autodot\hskip 1pc}
 \newlength{\authorindent}
@@ -22,3 +36,4 @@
   \fi
   \noindent\par\nobreak\vskip 2\baselineskip%
 }
+\fi
