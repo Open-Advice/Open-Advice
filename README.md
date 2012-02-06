@@ -1,11 +1,12 @@
 # Open Advice
 
-This is the repository for the Open Advice book. You can find the LaTeX source
-of the book here.
+This is the repository for the Open Advice book. You can find the LaTeX
+source of the book here.
 
 ## Building a PDF
 
-To build a pdf file out of the LaTeX source install pdflatex and run the command
+To build a pdf file out of the LaTeX source install pdflatex and run the
+command
 
     make
 
@@ -15,8 +16,8 @@ If you don't have make, you can run:
 
 ## Updating the book after changes
 
-If you have made local changes to the source of the book and want to render a
-PDF again:
+If you have made local changes to the source of the book and want to render
+a PDF again:
 
     make clean
     make
@@ -31,7 +32,8 @@ On Debian-based systems, you can install "pdflatex" with:
 
     "File `todonotes.sty' not found."
 
-This means you need to run the above apt-get command, because you are missing one of the LaTeX extra packages.
+This means you need to run the above apt-get command, because you are
+missing one of the LaTeX extra packages.
 
 ## License
 

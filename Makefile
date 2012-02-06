@@ -36,4 +36,4 @@ clean:
 	-rm -rf Open-Advice*.html Open-Advice.css Open-Advice.4* Open-Advice.idv
 	-rm -rf Open-Advice.lg Open-Advice.dvi Open-Advice.tmp Open-Advice.toc Open-Advice.xref
 	-rm -rf Open-Advice.epub Open-Advice.mobi
-	-find . -name "*.aux" -and -not -path ./.git -prune | xargs rm
+	-find . -name "*.aux" -and -not -path ./.git -prune | xargs rm -f
