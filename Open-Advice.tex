@@ -9,14 +9,8 @@
 \usepackage{textcomp}
 \usepackage{graphicx}
 \usepackage{xcolor}
-\ifusinght
-\else
-\usepackage{xmpincl}
-\includexmp{Open-Advice}
-\fi
 \usepackage{tabularx}
 \usepackage[english]{babel}
-\usepackage{pdfpages}
 \usepackage[raiselinks=true,
 bookmarks=true,
 bookmarksopenlevel=1,
@@ -52,6 +46,12 @@ pdfborder={0 0 0.5}
   bookmarksnumbered=true,
   pdfpagelayout=TwoColumnRight
 }
+\ifusinght
+\else
+  \usepackage{xmpincl}
+  \includexmp{Open-Advice}
+  \usepackage{pdfpages}
+\fi
 \hyphenation{pro-ject pro-jects Free-desk-top Wiki-pe-dia fund-rais-ing pro-spec-tus-es pro-vi-ders}
 
 \pagestyle{scrheadings}
@@ -73,7 +73,10 @@ pdfborder={0 0 0.5}
 \setlength{\emergencystretch}{0.25em}
 
 \begin{document}
-\includepdf[noautoscale]{frontcover}
+\ifusinght
+\else
+  \includepdf[noautoscale]{frontcover}
+\fi
 \frontmatter
 \input{topmatter}
 \input{foreword}

@@ -13,6 +13,9 @@ mobi: Open-Advice.mobi
 # for everyone elses 7/8" screen readers
 epub: Open-Advice.epub
 
+AUTHORS = "Lydia Pintscher"
+COVER 	= "frontcover.jpg"
+
 ####### Helpers #######
 
 %.pdf: %.tex
@@ -20,15 +23,19 @@ epub: Open-Advice.epub
 	pdflatex $<
 
 %.html:	%.tex
-	htlatex $<
+	htlatex $< "xhtml,fn-in"
 
 %.epub:	%.html
 	# requires calibre
-	ebook-convert $< $(basename $<).epub
+	ebook-convert $< $(basename $<).epub \
+		--cover $(COVER) \
+		--authors $(AUTHORS) 
 
 %.mobi:	%.html
 	# requires calibre
-	ebook-convert $< $(basename $<).mobi
+	ebook-convert $< $(basename $<).mobi \
+		--cover $(COVER) \
+		--authors $(AUTHORS) 
 
 clean:
 	-rm -rf Open-Advice.pdf Open-Advice.log Open-Advice.toc Open-Advice.aux
