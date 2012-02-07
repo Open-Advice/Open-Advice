@@ -29,7 +29,8 @@ COVER 	= "frontcover.jpg"
 	# requires calibre
 	ebook-convert $< $(basename $<).epub \
 		--cover $(COVER) \
-		--authors $(AUTHORS) 
+		--authors $(AUTHORS) \
+		--change-justification justify
 
 %.mobi:	%.html
 	# requires calibre
