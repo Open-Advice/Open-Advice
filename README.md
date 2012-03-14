@@ -45,6 +45,12 @@ If your distro doesn't have that you can download it from
 http://www.tug.org/texlive/devsrc/Master/texmf-dist/tex/latex/koma-script/tocstyle.sty
 and place it in the root directory of the book.
 
+## Project Statistics
+
+Project activity is tracked by onloh.net - see
+https://www.ohloh.net/p/open-advice-the-book
+for details.
+
 ## License
 
 The book and its content is licenced under CC-BY-SA. For questions about the
