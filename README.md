@@ -47,7 +47,7 @@ and place it in the root directory of the book.
 
 ## Project Statistics
 
-Project activity is tracked by onloh.net - see
+Project activity is tracked by ohloh.net - see
 https://www.ohloh.net/p/open-advice-the-book
 for details.
 
