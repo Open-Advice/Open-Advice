@@ -13,7 +13,7 @@ command
 If you don't have make, you can run:
 
     pdflatex Open-Advice
-    
+
 To build all other formats run:
 
     make all
