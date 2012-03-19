@@ -13,7 +13,7 @@ command
 If you don't have make, you can run:
 
     pdflatex Open-Advice
-    
+
 To build all other formats run:
 
     make all
@@ -32,6 +32,10 @@ On Debian-based systems, you can install "pdflatex" with:
 
     sudo apt-get install texlive-latex-extra
 
+On Gentoo-based systems, "pdflatex" and required extra pacakges can be installed with:
+
+    emerge texlive-latexrecommended xcolor
+
 ## Issues
 
     "File `todonotes.sty' not found."
@@ -47,7 +51,7 @@ and place it in the root directory of the book.
 
 ## Project Statistics
 
-Project activity is tracked by onloh.net - see
+Project activity is tracked by ohloh.net - see
 https://www.ohloh.net/p/open-advice-the-book
 for details.
 
