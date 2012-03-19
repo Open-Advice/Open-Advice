@@ -32,6 +32,10 @@ On Debian-based systems, you can install "pdflatex" with:
 
     sudo apt-get install texlive-latex-extra
 
+On Gentoo-based systems, "pdflatex" and required extra pacakges can be installed with:
+
+    emerge texlive-latexrecommended xcolor
+
 ## Issues
 
     "File `todonotes.sty' not found."
