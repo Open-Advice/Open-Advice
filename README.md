@@ -1,4 +1,5 @@
-# Open Advice
+Open Advice
+===========
 
 This is the repository for the Open Advice book. You can find the LaTeX
 source of the book here.
