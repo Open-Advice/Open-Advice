@@ -21,7 +21,6 @@ Open-Advice.mobi
 # htlatex
 *.html
 *.css
-*.sty
 *.tmp
 *.4??
 *.lg
