@@ -1,85 +1,86 @@
-\chapterwithauthor{Evan Prodromou}{Os outros podem estar errados, mas provavelmente não estão}
+\chapterwithauthor{Evan Prodromou}{Todos os outros podem estar errados, mas provavelmente não estão}
 
 \authorbio{Evan Prodromou é o fundador da Wikitravel, StatusNet e da rede social 
 de código aberto Identi.ca. Ele participa de comunidades de Software Livre há 15
-anos como desenvolvedor, escritor de documentação, e como um ocasional atirador 
-de bombas. Ele vive em Montreal, Quebec.}
+anos como desenvolvedor, escritor de documentação e como um ocasional atirador 
+de bombas. Ele mora em Montreal, Quebec.}
 
-\noindent{}A característica mais importante de um fundador de projeto de Software Livre, 
-nas primeiras semanas ou meses antes de lançar seu software para o mundo, é a 
-persistência teimosa diante de provas factuais esmagadoras. Se seu software é tão
-importante, por que alguém ainda não o tinha escrito? Talvez isso não seja possível. 
-Talvez ninguém mais deseje fazer o que você está fazendo. Talvez você não seja bom o suficiente
-para fazer isso. Talvez alguém mais já fez, e você apenas não foi bom o suficiente para encontrar
-pesquisando na Internet.
+\noindent{}A característica mais importante de um fundador de projetos de Software Livre -- 
+nas primeiras semanas ou meses antes de lançar seu software para o mundo -- é aquela 
+inabalável persistência diante de provas contrárias esmagadoras. Se seu software é tão
+importante por que uma outra pessoa ainda não o fez? Talvez ele não seja possível de ser construído. 
+Talvez ninguém mais queira fazer o que você está fazendo. Talvez você não seja bom o suficiente
+para desenvolvê-lo. Talvez uma outra pessoa já o tenha feito e você apenas não foi bom o
+suficiente para encontrá-lo através de pesquisas na Internet.
 
-Manter a fé por tanto tempo, na noite escura, é difícil; apenas a pessoa mais teimosa,
-obstinada e persistente consegue. E nós temos que pôr em prática todas as nossas opiniões 
-de programadores defendidas com firmeza. Qual é a melhor linguagem de programação para usar?
-Arquitetura da aplicação? Padrões de código? Cores do ícone? Licenças de software? Sistema de
-controle de versão? Se você é o único a trabalhar no projeto (ou que sabe sobre ele!), você
-tem que decidir sozinho.
+Continuar persistindo por tanto tempo, diante de tantas incertezas, é difícil; apenas aqueles mais teimosos,
+obstinados e persistentes conseguem. É necessário exercitar e defender com firmeza as suas opiniões 
+mais técnicas. Qual é a melhor linguagem de programação a ser adotada?
+Qual será a arquitetura da aplicação? Padronizações de código? Cores de ícones? Licenças de software? Qual sistema de
+controle de versão adotar? Se você é o único colaborador do projeto, então você
+terá que tomar estas decisões sozinho.
 
-Quando você finalmente lança seu software, no entanto, essa característica essencial de 
-determinação teimosa e opinião forte se torna um malefício, não um benefício. Depois do 
-lançamento, você precisará exatamente da habilidade oposta, ou seja, fazer concessões para
-tornar seu software mais útil para outras pessoas. E muitas dessas concessões você sentirá
-que são realmente erradas.
+Entretanto, a partir do momento em que você disponibiliza a primeira versão do software, essa característica essencial de 
+determinação teimosa e opinião forte se torna um malefício em vez de um benefício. Após o 
+lançamento da aplicação, você precisará exatamente da habilidade oposta, ou seja, fazer concessões para
+tornar seu software mais útil para outras pessoas. E muitas dessas concessões irão parecer
+realmente erradas.
 
-É difícil pegar informações de ``estranhos'' (por exemplo, pessoas que não são você). 
-Primeiro, porque eles focam no trivial, coisas sem importância -- a sua forma
-de nomear variáveis, digamos, ou a colocação de certos botões. E segundo, porque eles
-estão invariavelmente errados -- afinal, se a forma como você tem feito não é a forma certa,
-você não teria feito assim, em primeiro lugar. Se sua forma não era a forma certa, por que
-seu código seria popular?
+É difícil aceitar sugestões de "estranhos" (pessoas que não são você). 
+Primeiro porque eles focam naquelas coisas triviais e sem importância -- a sua forma
+de nomear variáveis ou a disposição de certos botões. Depois, porque eles
+estão invariavelmente errados -- afinal, se a forma como você fez não é a forma correta,
+você não teria feito assim desde o início. Se a sua solução não fosse a correta, por que
+o seu código seria tão popular?
 
-Mas ``errado'' é relativo. Se fazer uma escolha ``errada'' torna seu software mais
-acessível para usuários finais, ou para os desenvolvedores das distribuições, ou para administradores
-ou empacotadores, isso não está, na verdade, certo?
+Mas o conceito de "errado" é relativo. Se fazer uma escolha "errada" torna seu software mais
+acessível para usuários finais, desenvolvedores de distribuições ou administradores/empacotadores,
+esta decisão não seria, na verdade, correta?
 
-E a natureza desses tipos de comentários e contribuições geralmente é negativa.
-O feedback da comunidade é essencialmente reativo, o que significa que é em primeiro lugar crítico.
-Quando foi a última vez que você preencheu um relatório de \textit{bug} e disse: ``Eu realmente gosto da
-organização do módulo hashtable.c.'' ou ``Bom trabalho em montar esse
-sub-sub-sub-menu.''? As pessoas dão feedback porque não gostam da forma como as coisas 
-funcionam agora com seu software. Elas também podem não ser diplomáticas ao fazer isso.
+A natureza desses tipos de comentários e contribuições geralmente é negativa.
+O feedback da comunidade é essencialmente reativo, ou seja, é primariamente crítico.
+Quando foi a última vez que você criou um \textit{bug report} simplesmente para falar: "eu realmente gosto da
+organização do módulo \texttt{hashtable.c}" ou "o \textit{design} deste menu ficou muito bom"? 
+As pessoas dão feedback porque não gostam da forma como as coisas 
+atualmente funcionam no seu software. Além disso, elas podem ser nada diplomáticas ao enviar
+seus comentários.
 
-É difícil responder a esse tipo de feedback positivamente. Às vezes, nós incendiamos
-nossas listas de discussão de desenvolvimento, ou fechamos relatórios de \textit{bug} 
-com desdém e um WONTFIX\footnote{Abreviação para a frase em inglês "I won't fix", que
-significa "Eu não corrigirei"}. Pior, nos fechamos em nossos casulos, ignorando sugestões
-de fora ou feedback, abraçando nosso código confortável que se encaixa perfeitamente
+É difícil responder de forma positiva a esse tipo de feedback. Às vezes, nós insultamos
+tais pessoas em listas de discussão ou fechamos os \textit{bug reports} 
+com desdém e status "WONTFIX"\footnote{Abreviação para a frase em inglês "I won't fix", que
+significa "Eu não corrigirei".}. Ou pior, nos fechamos em nossos casulos, ignorando sugestões
+ou feedbacks externos, cultivando aquele código confortável que se encaixa perfeitamente
 em nossos preconceitos e vieses.
 
-Se seu software é apenas para você, você pode manter a base do código e sua
-infra-estrutura como um playground pessoal. Mas se você deseja que seu software 
-seja usado, para significar algo para outras pessoas, para (talvez) mudar o mundo,
-então você vai precisar construir uma comunidade de usuários próspera, orgânica,
-com um núcleo de \textit{committers}, administradores e desenvolvedores extras. 
-As pessoas precisam sentir como se possuíssem o software, da mesma forma que você.
+Se seu software é apenas para você, então você pode fazer do código e da
+infra-estrutura adotada o seu playground pessoal. Mas se você deseja que seu software 
+seja realmente utilizado, que signifique algo para outras pessoas e que (talvez) mude o mundo,
+então você vai precisar construir uma comunidade próspera e orgânica,
+formada por usuários, desenvolvedores e administradores. 
+As pessoas precisam se apropriar do software e ter a mesma sensação de pertencimento que você tem.
 
-É difícil lembrar que cada uma dessas vozes discordantes é o pequeno pedaço
-de algo maior. Imagine todas as pessoas que ouvem sobre seu software e
-nunca se deram ao trabalho de usá-lo. Aquelas que fizeram o download dele mas
-nunca o instalaram. Aquelas que o instalaram, tiveram dificuldades, e silenciosamente
-desistiram. E aquelas que queriam dar um feedback a você, mas não conseguiram
-encontrar o sistema de relatório de \textit{bug}, a lista de e-mail de desenvolvedores,
-o canal do IRC ou endereços de e-mail pessoais. Dadas as barreiras de comunicação,
-existe provavelmente cerca de 100 pessoas que gostariam de ver uma mudança para 
-cada pessoa que manda uma mensagem. Então, ouvir essas vozes quando elas
-chegam até você, é crucial.
+É difícil lembrar que cada uma dessas vozes discordantes é um pequeno pedaço
+de algo maior. Imagine todas as pessoas que ouviram falar sobre seu software mas
+nunca se deram ao trabalho de usá-lo. Imagine aquelas que fizeram o download mas
+nunca o instalaram. Aquelas que o instalaram, tiveram dificuldades e silenciosamente
+desistiram. E aquelas que queriam dar um feedback mas não conseguiram
+encontrar o sistema de \textit{bug report}, a lista de discussão dos desenvolvedores,
+o canal do IRC ou os endereços de e-mails pessoais. Dadas as barreiras de comunicação,
+para cada 1 pessoa que consegue enviar uma mensagem existem provavelmente cerca
+de 100 outras pessoas com potenciais feedbacks. Dessa forma, ouvir aqueles que conseguiram
+chegar até você é fundamental.
 
 O líder do projeto é responsável por manter a visão e o propósito do software.
-Nós não podemos vacilar, avançando ou retroagindo apenas baseado neste ou naquele
-e-mail de usuários aleatórios. E se há um princípio fundamental em jogo, então,
-naturalmente, é importante mantê-lo estável. E ninguém além do líder do projeto
-pode fazer isso.
+Nós não podemos vacilar, titubeando de um lado a outro a cada este ou aquele
+e-mail que chega de um usuário qualquer. Se há um princípio fundamental em jogo, então
+é naturalmente importante mantê-lo forte e estável. Somente o líder do projeto
+é capaz de fazer isso.
 
-Mas, temos que pensar: existem questões não fundamentais que podem tornar o seu
-software mais acessível ou útil? Em última análise, a medida do nosso trabalho
-está na forma como alcançamos as pessoas, como nosso software é usado, e para
-o que ele é usado. Quanto da nossa ideia pessoal sobre o que é ``certo'' realmente
-importa para o projeto e para a comunidade? Quanto do projeto é apenas o que o líder
-gosta, pessoalmente? Se essas questões não fundamentais existem, reduza o atrito,
-responda as demandas, e faça as mudanças. Isso vai tornar o projeto melhor
+Porém, é necessário pensar: existem questões não-fundamentais que podem tornar o seu
+software mais acessível ou útil? Em última análise, a medida do seu trabalho
+está na forma como você alcança as pessoas, na forma como seu software é utilizado e para
+que ele é utilizado. Quanto da sua ideia pessoal sobre o que é "certo" realmente
+importa para o projeto e para a comunidade? Quanto disso representa simplesmente o que você
+pessoalmente gosta? Se essas questões não-fundamentais existem, reduza os atritos,
+responda às demandas e faça as mudanças. Isso fará com que o projeto seja melhor
 para todos.
