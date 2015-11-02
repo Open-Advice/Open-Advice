@@ -1,0 +1,212 @@
+\chapterwithauthor{Markus Kr\"otzsch}{Fora do Laboratório: Construindo Comunidades Open Source a partir de Projetos Acadêmicos}
+
+\authorbio{Markus Kr\"otzsch é um pesquisador de pós-doutorado no Departamento de
+Ciência da Computação da Universidade de Oxford. Ele obteve seu Ph.D. no Instituto
+de Informática Aplicada e Métodos Formais de Descrição (AIFB) do Karlsruhe Institute
+of Technology (KIT) em 2010. Sua área de pesquisa é processamento automático e inteligente
+de informação, variando desde fundamentos para representação formal de conhecimento até
+aplicações tais como Semantic Web. Ele é o desenvolvedor-líder do Semantic MediaWiki
+(plataforma de sucesso para aplicações de Semantic Web), co-editor da especificação
+W3C OWL 2, mantenedor-chefe do portal semanticweb.org e co-autor do livro Foundations
+of Semantic Web Technologies.}
+
+\noindent{}Pesquisadores desenvolvem uma imensa quantidade de software na academia,
+seja para validar uma hipótese, para ilustrar uma nova abordagem ou meramente como uma
+ferramenta para auxiliar algum estudo. Na maioria dos casos, um pequeno protótipo pontual
+já é suficiente e é rapidamente dispensado depois que o foco da pesquisa muda para
+outra coisa. Entretanto, de vez em quando, uma nova abordagem ou tecnologia carrega
+o potencial de realmente mudar a forma com que um problema é solucionado. Isso traz
+reputação profissional, sucesso comercial e a gratificação pessoal de perceber todo
+o potencial que uma nova ideia pode ter. O pesquisador que fez tal descoberta sente
+então a vontade de transformar o seu protótipo em um produto que seja realmente utilizado
+-- e se depara com um conjunto completamente novo de problemas práticos.
+
+\section*{O Medo do Usuário -- N.T.: Ambíguo: quem tem medo? O dono do software ou o usuário? Não
+sei como resolver :( Usuário tem que ser objeto e não sujeito (sentido de posse)}
+
+Frederick P.\ Brooks, Jr., em um dos seus famosos ensaios sobre engenharia de software,
+traça um excelente retrato sobre os esforços de manutenção de um software real e
+nos adverte em relação aos usuários:
+
+%
+\begin{quote}
+"O custo total de manutenção de um programa amplamente utilizado é, tipicamente,
+no mínimo 40\% do custo do seu desenvolvimento. Surpreendentemente, este custo é
+fortemente afetado pelo número de usuários. Mais usuários encontram mais \textit{bugs}."\footnote{
+Frederick P.\ Brooks, Jr.: The Mythical Man-Month. Essays on Software Engineering. Anniversary
+Edition. Addison-Wesley, 1995.}
+\end{quote}
+%
+Embora os custos acima possam ser diferentes nos ambientes atuais, a observação básica
+ainda é verdadeira e pode ainda ter sido agravada pelo uso de comunicação global
+instantânea. Ainda pior, muitos usuários não somente encontram mais \textit{bugs} reais
+como também articulam mais desejos em geral. Seja ela um erro genuíno, uma requisição de
+funcionalidade ou meramente um mal entendido sobre a operação do software, uma requisição
+típica de um usuário está longe de ser um \textit{bug report} tecnicamente preciso. Cada
+requisição demanda a atenção dos desenvolvedores, consumindo um tempo precioso que passa a
+não estar disponível para realmente escrever código.
+
+A mente analítica do pesquisador prevê este problema e, em sua luta natural para prevenir
+um futuro sombrio ao lidar com clientes, pode desenvolver um completo "medo do usuário".
+No pior caso, isto pode levar a uma decisão contra o projeto como um todo. Em uma forma
+menos severa, pode fazer com que pesquisadores escondam produtos brilhantes de software
+dos seus potenciais usuários. Por mais de uma vez eu ouvi pesquisadores dizendo: "nós não
+precisamos de mais visibilidade, já estamos recebendo e-mails demais!". De fato, há casos
+onde o esforço de comunicação ligado a uma ferramenta de software excede o esforço que o
+pesquisador pode investir sem sacrificar seu trabalho principal.
+
+Na maioria dos casos, entretanto, este resultado trágico poderia ter sido facilmente evitado.
+Brooks dificilmente poderia prever isso. Quando ele escreveu seu ensaio, usuário era de fato
+clientes e manutenção do software era parte do produto que eles compraram. Era necessário
+encontrar um equilíbrio entre esforço de desenvolvimento, demandas de mercado e preço.
+Este é ainda o caso para muitos produtos comerciais de software atualmente, mas tem pouco a
+ver com a realidade do desenvolvimento Open Source em pequena escala. Usuários típicos de
+Software Livre não pagam pelo serviço que eles recebem. Consequentemente, suas atitudes não
+são aquelas de um cliente exigente, mas sim as de um apoiador agradecido e entusiasta.
+Um trabalho importante que os projetos de Software Livre de sucesso fazem é transformar
+este entusiasmo no tão desejado suporte, fazendo com que o aumento no interesse dos usuários
+se transforme também em um aumento na contribuição dos usuários.
+
+Reconhecer que usuários de Software Livre não são simplesmente "clientes que não pagam" é
+um discernimento importante. Porém, ele não deve nos levar a superestimar o potencial destes
+usuários. A contrapartida otimista do medo irracional do usuário é a crença que comunidades
+de Software Livre ativas e acolhedoras crescem naturalmente, baseado meramente na licença
+escolhida para publicar o código. Este erro grave de julgamento ainda é surpreendentemente
+comum e tem selado o destino de muitas tentativas de criação de comunidades de Software Livre.
+
+\section*{Semeando e Colhendo}
+
+O plural de "usuário" não é "comunidade". Enquanto o primeiro pode crescer em números,
+o segundo não cresce por si só ou então cresce descontroladamente sem produzir o tão
+sonhado suporte ao projeto. O trabalho do mantenedor do projeto -- que busca se beneficiar
+da energia bruta dos usuários -- se parece, portanto, com aquele de um jardineiro que precisa
+preparar um solo fértil, plantar e molhar as mudas de plantas e possivelmente podar aqueles
+brotos indesejados antes de ser capaz de colher os frutos. Comparado com as recompensas, o
+esforço geral é pequeno porém é vital fazer as coisas certas, no tempo certo.
+
+\paragraph*{Preparando os Fundamentos Técnicos}
+A construção de uma comunidade começa antes mesmo da chegada do primeiro usuário. A escolha
+da linguagem de programação já determina quantas pessoas serão capazes de implantar e realizar
+o \textit{debug} do código. Objective Caml pode ser uma linguagem bonita mas adotar o Java
+irá aumentar, em muitas ordens de magnitude, o número de potenciais usuários e colaboradores.
+Os desenvolvedores, portanto, devem chegar a uma solução de compromisso, visto que as tecnologias
+mais amplamente adotadas raramente são as mais eficientes ou elegantes. Isto pode ser um passo
+particularmente difícil para aqueles pesquisadores que frequentemente preferem aquelas linguagens
+com design superior. Quando estava trabalhando no Semantic MediaWiki, frequentemente me perguntavam
+porque nós usávamos PHP se Java \textit{server-side} seria muito mais simples e eficiente.
+Comparar o tamanho da comunidade do Semantic MediaWiki com esforços similares baseados no Java pode
+responder esta questão. Este exemplo também ilustra que o público-alvo determina a melhor escolha
+das tecnologias base. O próprio desenvolvedor deve ter o discernimento necessário para tomar uma
+decisão oportunista.
+
+\paragraph*{Trabalhando os Fundamentos por Completo}
+Um problema relacionado é a criação, desde o início, de código legível e bem documentado.
+Em um ambiente acadêmico, alguns projetos de software são desenvolvidos por muitos colaboradores
+temporários. Equipes transitórias podem deteriorar a qualidade do código. Eu me lembro de um
+pequeno projeto de software em Tu Dresden que foi muito bem mantido por um aluno. Após a sua saída,
+percebeu-se que o código estava amplamente documentado, em Turco. Um pesquisador será, no máximo,
+um programador em tempo parcial. Dessa forma, é necessário uma disciplina especial para garantir
+que o código esteja sempre acessível a todos. A recompensa é uma maior probabilidade de
+\textit{bug reports} mais esclarecedores, \textit{patches} mais úteis e, mais tarde, colaboradores
+externos.
+
+\paragraph*{Espalhando as Sementes da Comunidade}
+Desenvolvedores inexperientes de Software Livre frequentemente pensam que
+publicar seu código abertamente é um grande passo. Na verdade, ninguém mais
+irá notar. Para atrair usuários e colaboradores é necessário divulgar o projeto.
+A comunicação pública de qualquer projeto real deve, no mínimo, incluir o anúncio
+de cada nova versão. Listas de discussão são provavelmente o melhor canal para isso.
+Alguma habilidade social é necessária para encontrar o equilíbrio certo entre um
+\textit{spam} irritante e um eufemismo tímido. Projetos que são motivados por uma
+convicção honesta de que eles irão ajudar usuários a resolver problemas reais são
+geralmente fáceis de anunciar de forma respeitável. Os usuários irão facilmente notar
+a diferença entre publicidade desavergonhada e informação útil. Obviamente, anúncios
+mais audazes devem aguardar até que o projeto esta pronto o suficiente. Isto inclui
+não somente o código-fonte mas também a \textit{homepage} do projeto e sua
+documentação básica de uso.
+
+Ao longo da sua vida, o projeto deve ser mencionado em todos os lugares apropriados,
+incluindo \textit{web sites} (a começar pela página do próprio projeto!), apresentações,
+artigos científicos e discussões online. Geralmente as pessoas não valorizam o poder
+que um \textit{link} simples pode ter ao conduzir um colaborador em potencial à sua
+primeira visualização da \textit{homepage} do projeto. Pesquisadores não devem se
+esquecer também de divulgar o software fora do seu círculo acadêmico imediato. Dificilmente
+uma comunidade ativa será formada apenas por outros pesquisadores.
+
+\paragraph*{Criando Espaços para Crescer}
+Algo trivialmente fácil, porém frequentemente negligenciado, é a obrigação do
+mantenedor do projeto em disponibilizar os espaços de comunicação necessários
+para o crescimento da comunidade. Se um projeto não possui uma lista de discussão
+própria, todas as requisições de suporte serão enviadas diretamente para o
+mantenedor. Se não há sistema público para rastreamento de \textit{bugs}, \textit{bug reports}
+serão mais raros e menos úteis. Sem uma \textit{wiki} de documentação aberta ao público,
+o desenvolvedor será o único responsável por estender e refinar a documentação. Se
+o repositório do sistema de controle de versão não está acessível, usuários não serão
+capazes de obter o código-fonte mais recente antes de submeter os \textit{bug reports}.
+Se este repositório é fechado, é praticamente impossível admitir colaboradores externos.
+Toda esta infraestrutura é disponibilizada gratuitamente por diversos provedores de
+serviços. Nem toda forma de comunicação pode ser desejada, entretanto. Por exemplo,
+existem razões para manter o grupo de desenvolvedores fechado. Porém, seria insensato
+esperar algum suporte da comunidade sem preparar os espaços básicos para isso acontecer.
+
+\paragraph*{Encorajando e Controlando o Crescimento}
+Desenvolvedores inexperientes frequentemente acham que disponibilizar listas de discussão,
+foruns e \textit{wikis} para usuários requer muita manutenção adicional. Isto raramente
+acontece mas algumas atividades básicas são realmente necessárias. Tudo começa com uma
+solicitação rigorosa para que os espaços de comunicação sejam utilizados. Usuários precisam
+ser educados para realizar questões de forma pública, consultar a documentação antes
+de questionar e a submeter \textit{bug reports} via sistema de rastreamento em vez de e-mail.
+Eu tenho uma tendência a rejeitar todas as requisições privadas de suporte, ou a repassar
+as respostas para listas de discussão públicas. Isso também garante que soluções estarão
+disponíveis na web para futuros usuários. Em qualquer caso, deve-se agradecer explicitamente
+a todos os usuários por qualquer forma de contribuição -- muitas pessoas entusiasmadas e
+bem-intencionadas são necessárias para construir uma comunidade saudável.
+
+Quando se alcança uma certa densidade de usuários, o suporte começa a acontecer de
+usuário para usuário. Este é sempre um momento mágico para o projeto e é um sinal
+certo de que ele está seguindo um bom caminho. Idealmente, os mantenedores centrais
+devem ainda ajudar nas questões mais complicadas mas, em algum momento, os usuários
+irão liderar as discussões e é importante agradecê-los (diretamente) e envolvê-los
+cada vez mais no projeto. De forma contrária, situações insalubres devem ser contornadas
+sempre que possível e comportamento agressivo, em particular, pode ser um perigo real
+para o desenvolvimento da comunidade. Da mesma forma, nem todo entusiasmo bem-intencionado
+é produtivo. Neste momento, é frequentemente necessário dizer não, de forma amistosa porém
+clara, para evitar \textit{feature creep}\footnote{N.T. Fenômeno no qual um software
+implementa mais funcionalidades do que originalmente planejado, geralmente com redução
+na qualidade das implementações.}.
+
+\section*{O Futuro é Ilimitado}
+
+Construir uma comunidade initial ao redor de um projeto é uma parte importante
+da transformação de um protótipo de pesquisa em um projeto maduro de Software Livre.
+Se isto acontecer com sucesso, muitas opções para ampliação do projeto estão disponíveis,
+dependendo das metas do mantenedor e da comunidade. Algumas possibilidades gerais incluem:
+
+%
+\begin{itemize}
+\item Continuar crescendo e desenvolvendo o projeto e a comunidade,
+ampliando a equipe central de desenvolvedores/mantenedores e eventualmente tornando
+o projeto independente das suas origens acadêmicas. Isto pode requerer mais
+atividades na comunidade (ex: eventos dedicados) e talvez o estabelecimento de
+suporte organizacional.
+%
+\item Criar uma empresa para explorar comercialmente o projeto baseado, por exemplo,
+em licenças duais ou consultoria. Ferramentas de ampla aceitação no mercado e
+comunidades vibrantes são ativos fundamentais de qualquer empresa e podem ser
+benéficas para várias estratégias de negócio, sem abandonar o produto de Software
+Livre original.
+%
+\item Retirar-se do projeto. Existem muitas razões pelas quais alguém pode não
+mais ser capaz de manter uma relação de proximidade com o projeto. Ter criado
+uma comunidade saudável maximiza as chances do projeto continuar de forma independente.
+Em qualquer caso, é muito mais sensato comunicar claramente a retirada do que abandonar
+o projeto silenciosamente, o destruindo por inatividade até o ponto em que nenhum
+mantenedor futuro pode ser encontrado.
+\end{itemize}
+%
+O formato da comunidade será diferente ao caminhar na direção de uma dessas possibilidades
+gerais. Mas independente disso, o papel do pesquisador muda em função do projeto. O cientista
+e programador inicial pode se tornar um gerente ou diretor técnico. Neste sentido, a principal
+diferença entre um projeto de Software Livre influente e um protótipo perpétuo de pesquisa
+não é a quantidade de trabalho, mas sim o tipo de trabalho necessário para se ter sucesso.
+Compreender isto é parte do sucesso -- a única outra coisa necessária é um software incrível.
