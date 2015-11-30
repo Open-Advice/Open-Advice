@@ -1,0 +1,193 @@
+\chapterwithauthor{Felipe Ortega}{Prepare-se para o futuro: evolução de equipes em Software Livre}
+
+\authorbio{Felipe Ortega é um pesquisador e gerente de projeto no Libresoft, um grupo
+de pesquisa na Universidade Rey Juan Carlos (URJC), Espanha. Felipe desenvolve novas
+metodologias para analisar comunidades colaborativas abertas (como projetos de Software
+Livre, Wikipedia e redes sociais). Ele fez uma extensa pesquisa com o projeto
+Wikipedia e sua comunidade de autores. Ele participa ativamente na pesquisa,
+promoção e educação/formação em Software Livre, especialmente no Mestrado
+em Software Livre na URJC. É um defensor ferrenho dos recursos educacionais abertos,
+acesso aberto em publicações científicas e dados abertos na ciência.}
+
+\noindent{}Em seu famoso ensaio \textit{A catedral e o bazar}\footnote{\url{
+http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar}}, Eric S.
+Raymond menciona uma das primeiras lições importantes que todo programador 
+deve aprender: ``Todo bom trabalho de software começa por motivações pessoais 
+do desenvolvedor''. Você nunca percebe quão correta é essa afirmação até você
+enfrentar essa situação. Na verdade, a maioria dos programadores de Software Livre
+(senão todos) certamente passaram por esse processo na medida em que eles começaram
+a trabalhar em um novo projeto, ou se juntaram a um já existente, ansiosos por ajudar
+a torná-lo melhor. Entretanto, muitos desenvolvedores e outros participantes em 
+comunidades de Software Livre (escritores de documentação, tradutores, etc.) geralmente
+negligenciam outra importante lição enfatizada por Raymond em seu ensaio: ``Quando você perde
+interesse em um programa, sua última obrigação é entregá-lo a um sucessor competente''.
+Esse é o tema central que eu quero abordar aqui. Você deveria pensar sobre o futuro
+de seu projeto, e os recém-chegados que um dia assumirão o seu trabalho e continuarão
+a melhorá-lo.
+
+\section*{Alternância de gerações}
+
+Em algum momento de suas vidas, muitos projetos de Software Livre vão enfrentar
+uma alternância de gerações. Os antigos desenvolvedores responsáveis pela manutenção
+e melhoria do código eventualmente deixarão o projeto e sua comunidade, por várias razões.
+Estas incluem questões pessoais, um novo emprego que não lhes deixa tempo livre, um novo projeto,
+a mudança para um projeto diferente que parece mais atraente, \dots\ A lista pode ser muito longa.
+
+O estudo da alternância de gerações (ou rotatividade do desenvolvedor) em projetos de Software Livre
+ainda é uma área de estudos emergente que requer mais pesquisas para melhorar nossa
+compreensão dessas situações. Apesar disso, alguns pesquisadores já coletaram evidências
+objetivas que lança alguma luz sobre esses processos.
+No OSS 2006, meus colegas Jesus G. Barahona e Gregorio Robles apresentaram um trabalho
+intitulado ``Contributor Turnover in Libre Software Projects''. Nesse trabalho,
+eles mostram uma metodologia para identificar os desenvolvedores mais ativos (geralmente conhecidos
+como \textit {core contributors}) em diferentes intervalos de tempo, ao longo de toda a história
+de um determinado projeto. Então, eles aplicam esse método para estudar 21 grandes projetos, em
+particular GIMP, Mozilla (antiga instância do famoso navegador) e
+Evolution. Em poucas palavras, o que eles descobriram é que nós podemos identificar três tipos de
+projetos de acordo com sua taxa de rotatividade de desenvolvedores:
+\begin{itemize}
+ \item Code gods projects (NÃO TRADUZI PQ NÃO FAÇO IDEIA DE COMO TRADUZIR ISSO)
+: Esses projetos dependem fortemente do trabalho de seus 
+fundadores e há muito pouca alternância de gerações, ou nenhuma. O GIMP se
+enquadra nessa categoria.
+ \item Projetos com várias gerações: Projetos como Mozilla mostram um claro
+padrão de rotatividade de desenvolvedores, com novos grupos de desenvolvedores
+ativos assumindo a liderança da manutenção e desenvolvimento do código das mãos
+de \textit {core contributors} anteriores.
+ \item Projetos compostos: Evolution pertence a uma terceira categoria de projetos,
+mostrando alguma taxa de rotatividade mas não tão evidente como no caso anterior,
+atenuado pela retenção de alguns \textit {core contributors} sobre a história do
+projeto.
+\end{itemize}
+
+Essa classificação nos leva a uma pergunta óbvia: qual é o padrão mais
+comum encontrado em projetos reais de Software Livre lá fora? Bem, os resultados
+para o conjunto total de 21 projetos analisados neste trabalho rendem uma clara conclusão,
+que é a de que várias gerações e projetos compostos são os casos mais comuns no ecossistema
+do Software Livre. Somente o Gnumeric e o Mono mostraram um padrão distinto da forte retenção
+de antigos desenvolvedores, indicando que as pessoam que contribuem para esses projetos podem 
+ter mais razões mais apelativas para continuar seu trabalho por um longo tempo.
+
+No entanto, essa não é a imagem normal. Pelo contrário, esse estudo fornece
+suporte para o conselho que estamos considerando aqui, que deveríamos nos
+preparar para transferir, em algum momento no futuro, nosso papel e conhecimento no
+projeto para os futuros contribuidores que vão se juntar à nossa comunidade.
+
+\section*{A lacuna do conhecimento}
+
+Qualquer pessoa que experimenta uma mudança significativa em sua vida deve lidar
+com a adaptação às novas condições. Por exemplo, quando você deixa o seu trabalho
+por um outro você se prepara para um certo período no qual você tem que se ajustar
+ao novo lugar e se integrar num grupo de trabalho diferente. Felizmente, depois de
+um tempo você finalmente se estabelece em seu novo emprego. Mas, às vezes, você
+mantem bons amigos de seu antigo emprego e você pode encontrá-los novamente após
+a mudança. Talvez, então, falar com seus ex-colegas de trabalho, você pode saber
+o que aconteceu com a pessoa recrutada para substituí-lo. Isso raramente ocorre em
+projetos de Software Livre.
+
+A desvantagem da alternância de gerações em projetos de Software Livre pode
+vir de uma forma muito concreta, ou seja, uma lacuna de conhecimento. Quando uma
+antiga desenvolvedora deixa o projeto e, especialmente, se ela tem uma vasta experiência
+nessa comunidade, ela deixa para trás tanto o seu conhecimento tangível quanto o abstrato
+que pode ou não ser passado aos novatos subsequentes.
+
+Um claro exemplo é o código fonte. Como qualquer produto de fino trabalho intelectual
+(bem, ao menos deve-se esperar isso, certo?) os desenvolvedores deixam uma marca
+pessoal sempre que eles produzem um novo código. Algumas vezes, você se sente eternamente
+em dívida com o incrível programador que escreveu o código limpo e elegante, que praticamente
+fala por si só e é fácil de manter. Outras vezes, a situação é o oposto e você luta
+para entender o tão obscuro e não claro código sem qualquer comentário ou dicas
+que podem ajudá-lo.
+
+Isso é o que tentamos medir em 2009, em um trabalho de pesquisa apresentado no HICSS
+2009. O título é ``Using Software Archeology to Measure Knowledge Loss in
+Software Projects Due to Developer Turnover''. Caso você esteja pensando, isso não
+tem nada a ver com um chicote, tesouros, templos ou aventuras emocionantes, embora
+tenha sido realmente divertido. O que medimos (entre outras coisas) foi a porcentagem
+de código orfão deixado para trás por desenvolvedores que sairam de projetos de Software
+Livre e não foram assumidos por nenhum dos desenvolvedores atuais, ainda. Nesse caso,
+escolhemos quatro projetos (Evolution, GIMP, Evince e Nautilus) para testar nosso método
+de pesquisa. E encontramos resultados muito interessantes.
+
+O Evolution mostrou um padrão um pouco preocupante, no sentido de que a porcentagem
+dos códigos orfãos era crescente ao longo do tempo. Em 2006, quase 80\% de todas as
+as linhas de código tinham sido abandonadas pelos antigos desenvolvedores e permaneciam
+intocadas pelo resto da equipe. Por outro lado, o GIMP mostrou um padrão radicalmente
+diferente, com um esforço claro e sustentado da equipe de desenvolvimento para reduzir o
+númerod de linhas de código orfãs. Aliás, lembre-se que o GIMP já tinha sido caracterizado
+como um \textit {code gods project} e, assim, se beneficia de uma equipe de desenvolvimento
+muito mais estável para realizar essa tarefa assustadora.
+
+Isso significa que os desenvolvedores do GIMP tiveram uma melhor experiência que
+as pessoas do Evolution? Para ser honesto, não sabemos. No entanto, podemos prever um
+claro risco previsível: quanto maior a porcentagem de código orfão, maior o esforço para
+manter o projeto. Sempre que você precisar corrigir um \textit {bug}, desenvolver uma
+nova funcionalidade ou ampliar uma já existente, você topa com um código que nunca tinha
+visto antes. Claro que você pode ser um programador fantástico, mas não importa quão maravilhoso
+você seja, os desenvolvedores do GIMP têm uma clara vantagem neste caso, já que eles tem alguém
+na equipe com o conhecimento preciso sobre a maior parte do código que eles precisam para manter.
+Além disso, eles também trabalham para reduzir ainda mais a parte desconhecida do código fonte.
+
+\section*{Sentir-se em casa}
+
+Curiosamente, alguns projetos conseguem reter usuários por períodos muito maiores
+que o esperado. Mais uma vez, podemos encontrar evidência empírica que apoiam essa 
+afirmação. No OSS 2005, Michlmayr, Robles e González-Barahona apresentaram alguns
+resultados relevantes sobre este aspecto. Eles estudaram a persistência da participação
+de mantenedores de software no Debian, calculando a chamada taxa de meia-vida. 
+Esse é o tempo necessário para uma determinada população de mantenedores caia pela
+metade do seu tamanho inicial. O resultado foi que a meia-vida estimada dos mantenedores
+do Debian era de aproximadamente 7.5 anos. Em outras palavras, uma vez que o estudo
+foi realizado durante um período de seis anos e meio (entre Julho de 1998 e
+Dezembro de 2004), que vai do Debian 2.0 ao Debian 3.1 (somente versões estáveis),
+mais de 50\% dos mantenedores do Debian 2.0 ainda estavam contribuindo para o Debian
+3.1.
+
+O Debian criou um procedimento bastante formal para admitir novos mantenedores de
+software (também conhecidos como desenvolvedores Debian) incluindo a aceitação do
+Contrato Social do Debian e a demonstração de familiaridade com a Política do Debian.
+Como resultado, seria de se esperar contribuidores bastante comprometidos. Na verdade,
+esse é o caso, já que esses autores descobriram que pacotes abandonados por antigos
+mantenedores era geralmente assumidos por outros desenvolvedores que permaneciam na
+comunidade. Apenas nos casos em que o pacote não era mais útil ele era simplesmente
+abandonado. Acho que podemos aprender algumas lições úteis desse trabalho de pesquisa:
+\begin{enumerate}
+ \item Gaste algum tempo desenvolvendo as diretrizes principais do seu projeto. Elas
+ podem começar como um único e curto documento, simplesmente apresentando algumas
+ recomendações e boas práticas. Isso deve evoluir à medida em que o projeto cresce,
+ para servir como uma pílula de aprendizagem para os recém-chegados captarem rapidamente
+ os valores principais de sua equipe, bem como a marca de seu estilo de trabalho.
+ \item Obrigue-se a seguir padrões de código conhecidos, boas práticas e
+estilo elegante. Documente seu código. Inclua comentários para descrever seções que
+podem ser especialmente difíceis de entender. Não sinta que você está desperdiçando
+seu tempo. Obrigue-se a seguir padrões de codificação conhecido, boas práticas e 
+estilo elegante. Documente seu código. Incluir comentários para descrever seções
+que pode ser especialmente difícil de entender. Não sinta que você está desperdiçando
+seu tempo.Na prática, você está sendo muito pragmático, investindo tempo no futuro
+do seu projeto.
+ \item Se possível, quando chegar a hora de você sair do projeto tente avisar aos
+ outros de sua decisão com alguma antecedência. Certifique-se de que eles entendam
+ que partes críticas vão precisar de um novo mantenedor. Idealmente, se você estiver
+ em uma comunidade, prepare pelo menos um procedimento muito simples para automatizar
+ esse processo e se certifique-se de que você não esqueceu nenhum ponto importante
+ antes que a pessoa deixe o projeto (especialmente se ela era um desenvolvedor importante).
+ \item Fique de olho no tamanho do código órfão. Se ele cresce muito rapidamente, ou se
+ atinge uma parte significativa do seu projeto, é uma clara indicação de que você terá
+ problemas muito em breve, especialmente se o número de relatórios de bugs cresce ou
+ você pretende renovar o seu código com um refatoramento sério.
+ \item Certifique-se sempre de deixar dicas e sugestões suficientes para um recém-chegado
+ que irá assumir o seu trabalho no futuro.
+\end{enumerate}
+
+\section*{Eu gostaria de ter sabido que você vinha (antes de eu sair)}
+
+Eu admito que não é muito fácil pensar sobre seus sucessores enquanto você está programando. 
+Muitas vezes, você simplesmente não percebe que o seu código pode acabar sendo tomado por um
+outro projeto, reutilizado por outras pessoas ou você pode, eventualmente, ser substituído
+por outra pessoa disposta a continuar o seu trabalho. No entanto, o bem mais precioso do
+Software Livre é precisamente esse: o código será reutilizado, adaptado, integrado ou expandido
+por outra pessoa. Sustentabilidade é uma característica crítica da engenharia de software.
+Mas ela se torna primordial no Software Livre. Não é apenas em relação ao código fonte. 
+É sobre as pessoas, relações sociais e etiqueta digital. É algo além do simples bom gosto.
+Quod severis metes (``você colhe o que plantou''). Lembre-se disso, na próxima vez, você
+pode ser o recém-chegado preenchendo a lacuna de conhecimento deixada por um antigo desenvolvedor.
