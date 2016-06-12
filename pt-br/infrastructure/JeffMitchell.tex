@@ -1,0 +1,167 @@
+\chapterwithauthor{Jeff Mitchell}{Ame o desconhecido}
+
+\authorbio{Jeff Mitchell passa seus dias de trabalho envolvido com todos
+os tipos de tecnologias da computação, e seus dias de folga com todos os
+tipos de projetos de Software Livre e a maioria se beneficia de uma confluência
+de ambos. Depois de atuar profissionalmente como um administrador de sistemas
+entre 1999-2005, ele tem mantido suas habilidades afiadas trabalhando
+voluntariamente para vários projetos de Software Livre e outros tipos de trabalho.
+Hoje, a maioria do seu tempo em Software Livre é gasto como administrador de
+sistemas para o KDE e desenvolvedor principal do \textit{player} Tomahawk.
+Jeff atualmente vive em Boston, EUA.}
+
+\noindent{}Recentemente eu fiz parte de um grupo para entrevistar um potencial
+novo administrador de sistemas no trabalho. Nós tínhamos passado por algumas
+dezenas de currículos e finalmente trazíamos o nosso primeiro candidato para
+uma entrevista. O candidato -- vamos chamá-lo de John -- tinha experiência
+com \textit{clusters} de computadores menores, estilo laboratório, assim como
+com operações maiores de centro de dados. No início, as coisas estavam correndo
+bem, exceto por suas respostas estranhas para algumas de nossas perguntas: ``Eu
+sou um administrador de sistemas.'' O significado dessa afirmação não ficou
+imediatamente claro para nós, até o seguinte diálogo acontecer:
+\begin{quote}
+\textbf{Eu}: Então, você disse que não tem experiência com Cisco IOS,
+e quanto a redes em geral?\newline
+\textbf{John}: Bem, eu sou um administrador de sistemas.\newline
+\textbf{Eu}: Certo, mas -- e sobre os conceitos de rede? Os protocolos
+de roteamento como BGP ou OSPF, VLANs, pontes \dots \newline
+\textbf{John, irritado}: Eu sou um \emph{administrador de sistemas}.
+\end{quote}
+Foi quando entendi o que ele estava dizendo. John não estava nos dizendo
+que ele sabia de várias coisas que perguntamos porque ele era um amdinistrador
+de sistemas; ele estava nos dizendo que por ser um administrador de sistemas
+ele \emph{não} sabe sobre essas coisas. John era um administrador de \emph{sistemas};
+afirmar isso era sua forma de acenar que essas tarefas pertenciam aos administradores
+de redes. Provavelmente sem surpresa, John não conseguiu o trabalho. 
+
+\paragraph*{}Para muitos projetos de Software Livre, especialização é uma maldição,
+não uma benção. Se um projeto falha em uma ou outra categoria, geralmente depende
+do tamanho da equipe de desenvolvimento; especialização ao grau de pontos únicos de
+falhas pode significar sérias perturbações a um projeto no caso de um desenvolvedor
+sair, seja em termos bons, ruins ou infelizes. Isso não é diferente para administradores
+de sistemas de projetos de Software Livre, embora a escassez geral destes pareça permitir
+aos projetos, algumas vezes, adotar tolerâncias perigosas.
+
+O exemplo mais notório que já vi envolveu um projeto em particular cujo site de
+documentação (incluindo toda sua documentação de instalação e configuração) esteve
+fora do ar por mais de um mês. O motivo: o servidor havia caído, e a única pessoa
+com acesso a esse servidor estava navegando em um ``navio pirata'' com membros do
+Partido Pirata da Suécia. Isso realmente aconteceu.
+
+Entretanto, nem todos os pontos únicos de falha se devem a administradores de
+sistemas ausentes; alguns são artificiais. As decisões de permissão de acesso
+de administração do sistema de um grande projeto foram controladas por um único
+administrador líder, que não só reservou algumas permissões de acesso apenas para
+si (você adivinhou: sim, ele desapareceu por um tempo e sim, isso causou problemas)
+mas tomou decisões sobre quanta permissão de acesso seria dada baseada em sua
+confiança no candidato. ``Confiança'' nessa caso era baseada em uma coisa; não
+era baseada em quantos membros da comunidade apoiaram aquela pessoa, quanto tempo
+ela tinha sido um colaborador ativo e confiável para esse projeto, ou mesmo quanto
+tempo ele tinha conhecido essa pessoa como membro do projeto. Pelo contrário, foi
+baseada em quão bem ele conhecia pessoalmente alguém, o que queria dizer quão bem
+ele conhecia aquele indivíduo \emph{em pessoa}. Imagine o quão bem isso funciona
+para uma equipe global distribuída de administradores de sistemas.
+
+É claro, esse exemplo só vai mostrar que é muito difícil para os \textit{sysadmins}
+de Software Livre andar na linha entre segurança e capacidade. Grandes empresas podem
+pagar mais pessoas, mesmo quando esses funcionários são segmentados em diferentes
+responsabilidades ou domínios de segurança. Ter mais pessoas é importante,
+mas e se a única opção atual para administração de sistema com mais pessoas é pegar
+o primeiro cara que aparece aleatoriamente em seu canal IRC e voluntários para
+ajudar? Como você pode confiar razoavelmente nessa pessoas, em suas habilidades,
+ou em suas motivações? Infelizmente, só os colaboradores de projetos, ou algum
+subconjunto deles, podem determinar quando a pessoa certa chegou, usando o mesmo
+modelo da Rede de Confiança que fundamenta o mundo do Software Livre. O universo 
+dos projetos de Software Livre, suas necessidades e aqueles dispostos a colaborar
+para qualquer projeto, é felizmente diversificado; como um resultado, a dinâmica
+humana, confiança, intuição e como aplicar esses conceitos a qualquer projeto de
+Software Livre, são grandes temas que estão longe do escopo desse pequeno ensaio.
+
+\paragraph*{}Uma coisa principal, no entanto, tem facilitado se manter nessa linha
+de segurança/capacidade: o surgimento de sistemas de controle de versão distribuídos,
+ou DVCSes. No passado, o controle de acesso era primordial porque o coração de qualquer
+projeto de Software Livre -- seu código-fonte -- era centralizado. Sei que muitos por aí
+devem estar pensando ``Jeff, você deveria saber melhor que isso; o coração de um projeto
+é sua comunidade, não seu código!'' Minha resposta é simples: os membros da comunidade
+vêm e vão, mas se alguém acidentalmente executa um ``rm -rf'' em toda a árvore do VCS
+centralizada de seu projeto e você não tem \textit{backups}, quantos desses membros da
+comunidade estarão dispostos a ficar e ajudar a recriar tudo do zero? (Isso na verdade
+é baseado em um exemplo real, onde um membro da comunidade, que estava bêbado, irritou-se
+com um código que ele estava depurando e executou um ``rm -rf'' em seu \textit{checkout}
+inteiro, \emph{pretendendo} destruir o código todo do projeto. Felizmente, ele não era
+um \textit{sysadmin} com acesso ao repositório central, e estava muito bêbado para se
+lembrar que sua cópia era simplesmente um \textit{checkout}.)
+
+O código de um projeto é o seu coração; seus membros da comunidade são a sua
+força vital. Sem ambos, você terá dificuldades para manter um projeto vivo.
+Com um VCS centralizado, se você não tem a prevenção de definir \textit{backups}
+regulares, talvez você possa ter sorte e ser capaz de reunir a árvore inteira
+de fontes dos \textit{checkouts} que diferentes pessoas tinham de várias partes
+da árvore, mas para a maioria dos projetos, a história do código é tão importante
+quanto o próprio código atual, e você ainda terá perdido tudo.
+
+Isso não é mais o caso. Quando cada clone local tem toda a história de um projeto
+e \textit{backups} nortunos podem ser feitos por ter um comando agendado tão simples
+quanto ``git pull'', o repositório centralizado é agora apenas uma ferramenta de
+coordenação. Isso diminui um pouco o seu status. Ele ainda tem que ser protegido
+contra ameaças internas e externas: sistemas sem correções ainda são vulneráveis
+a ataques conhecidos, um \textit{sysadmin} mal-intencionado pode ainda causar estragos,
+um sistema de autenticação ineficiente pode ainda permitir código malicioso em sua
+base de código, e um acidental ``rm -rf'' de um repositório centralizado pode ainda
+causar perda de tempo ao desenvolvedor. Mas esses desafios podem ser superados, e em
+tempos de hospedagem barata de VPS e data center, a ausência de \textit{sysadmins}
+pode ser superada também. (Melhor garantir que você tenha acesso redundante para DNS!
+Ah, e colocar seus sites em um repositório DVCS também, e fazer \textit{branches}
+para modificações locais. Você me agradecerá depois.) Assim, os DVCSes dão ao seu
+projeto corações extras quase de graça, que é uma grande forma de ajudar os \textit{sysadmins}
+de Software Livre a dormirem à noite e fazer-nos sentir um pouco mais como Senhores do Tempo.
+Isso significa que se você não está em um DVCS, pare de ler nesse momento e vá mudar para um.
+Isso não é apenas sobre fluxo de trabalho e ferramentas. Se você se preocupa com a segurança
+de seu código e seu projeto, você mudará.
+
+\paragraph*{}Redundância de código-fonte é uma obrigação, e, em geral,
+quanto maior a quantidade de redundância que você puder gerenciar, mais
+robustos são os seus sistemas. Pode também parecer óbvio que você queira
+redundância de administradores de sistemas; o que você pode não achar óbvio
+é que \textit{sysadmins} redundantes não são tão importantes quanto
+habilidades redundantes. John, o administrador de sistemas, trabalhou
+em data centers e empresas com \textit{sysadmins} redundantes, mas rígidos e
+com habilidades definidas. Enquanto isso funciona para grandes empresas,
+que podem pagar por novos \textit{sysadmins} com habilidades particulares
+sob demanda, a maioria dos projetos de Software Livre não tem esse luxo. 
+Você tem que trabalhar com o que tem. Isso, claro, significa que uma
+alternativa (e, às vezes, a única alternativa) para encontrar administradores
+de sistemas redundantes é espalhando a carga de trabalho, ter outros
+membros do projeto assumindo uma competência ou duas até que a redundância
+seja atingida.
+
+Isso não é, na verdade, diferente para o desenvolvedor ou para o artista
+de um projeto; se metade da sua aplicação é escrita em C++ e outra é em
+Python, e somente um desenvolvedor sabe Python, se esse desenvolvedor
+deixa o projeto isso causará enormes problemas a curto prazo e sérios
+a longo prazo também. Encorajar desenvolvedores a se diversificarem e
+se familiarizarem com mais linguagens, paradigmas, bibliotecas, e assim
+por diante, significa que cada um de seus desenvolvedores se torna mais
+valioso, e isso não deveria vir como um choque; adquirir novas habilidades
+é uma consequência da educação contínua, e uma equipe mais educada é mais
+valiosa. (Isso também torna os seus CV mais valiosos, o que deve fornecer
+um bom impulso.)
+
+A maioria dos desenvolvedores de Software Livre que eu conheço acham um
+desafio e um prazer continuar testando novas coisas, já que esse é o
+comportamento que os leva ao desenvolvimento de Software Livre em primeiro
+lugar. Da mesma forma, administradores de sistemas que trabalham
+com Software Livre são escassos e não podem se dar ao luxo de ficarem
+presos em uma rotina. Novas tecnologias relevantes para o \textit{sysadmin}
+estão sempre surgindo, e há, muitas vezes, formas de usar tecnologias
+já existentes, ou tecnologias mais velhas de novas formas, para melhorar
+a infraestrutura ou aumentar a eficiência.
+
+John não era um bom candidato porque ele trouxe pouco valor; e ele trouxe
+pouco valor porque ele nunca tinha saído de seu papel definido. \textit{Sysadmins}
+de Software Livre que caem nessa armadilha não apenas prejudicam o projeto
+com o qual eles estão envolvidos, mas eles reduzem seu valor para outros projetos
+que usam diferentes tecnologias de infraestrutura e que poderiam desesperadamente
+dar uma ajuda; isso diminui a capacidade global da comunidade de Software Livre.
+Para o administrador bem-sucedido que trabalha com Software Livre, não existe
+essa coisa de zona de conforto.
